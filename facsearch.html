@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html class="element" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta lang="en" />
+    <meta
+      name="description"
+      content="Analysis of Anna University IRINS data."
+    />
+    <meta name="viewport" content="initial-scale=1" />
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="css/sakura.css" />
+    <title>Anna University Chennai Research Ranking</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="tablefilter/style/tablefilter.css"
+    />
+    <style>
+      /**
+     * Custom CSS definitions as per TableFilter configuration
+     */
+      .myLoader {
+        position: absolute;
+        padding: 5px;
+        margin: 100px 0 0 5%;
+        width: auto;
+        z-index: 1000;
+        font-size: 12px;
+        font-weight: bold;
+        border: 1px solid #666;
+        background: #ffffcc;
+        vertical-align: middle;
+      }
+
+      .myStatus {
+        width: auto;
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header style="text-align: center">
+      <h2>Major Areas of R&D Specialisation in Anna University.</h2>
+      <strong><h4>The Faculty Search</h4></strong>
+      <a href="index.html">To Main Page</a>
+      <br>
+      <a href="search.html">To Area of Interest Search</a>
+    </header>
+
+    <br />
+    Enter the name of the faculty you want to search inside the search box. The
+    search will return the areas of interest of the selected faculty members,
+    linked to their IRINS pages.
+    <br />
+    <br />
+
+    <form class="navbar-form navbar-left" onsubmit="filter(event);">
+      <div class="input-group" style="text-align: center">
+        <label for="slcOperators">Search for Faculty</label>
+        <input
+          name="inpSearch"
+          type="text"
+          class="form-control"
+          onfocus="this.value=''"
+          placeholder="Search"
+          autofocus
+        />
+        <button type="submit" class="btn btn-default">Search</button>
+        <button type="reset" class="btn btn-link" onclick="tf.clearFilters();">
+          Clear
+        </button>
+        <button
+          type="reset"
+          class="btn btn-link"
+          onclick="window.history.back();"
+        >
+          Return
+        </button>
+      </div>
+    </form>
+
+    <script src="tablefilter/tablefilter.js"></script>
+    <div id="filtersToggle" style="visibility: hidden"></div>
+
+    <table id="aoi-table" class="aoi-table" style="text-align: left">
+      <thead style="text-align: center">
+        <th><strong>Faculty</strong></th>
+        <th>Area of Interest</th>
+      </thead>
+      <tr>
+        <td><a href=https://annauniv.irins.org/profile/117861>Abirami S</a></td>
+        <td>Image Processing, Natural Language Processing, Artificial Intelligence, Video Analytics, Data Analytics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/169024>Akila R</a></td>
+        <td>Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117934>Akila R</a></td>
+        <td>Fluid Dynamics and Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117879>Anandhakumar P</a></td>
+        <td>Networks, Digital Image Processing, Artificial Intelligence, Computer Vision, Robotics, Multimedia Networks, Multimedia Data Structures, Artificial Neural Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117930>Anbarasu Sivalingam</a></td>
+        <td>DNA Computing, Queueing Models, Theoretical Computer Science</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/118035>Anbuchelian S</a></td>
+        <td>Wireless Sensor Networks, Computer Networks, Machine Learning, Data Analytics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117782>Anbuselvi S V</a></td>
+        <td>Power systems Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117744>Angelin Gladston</a></td>
+        <td>Software Engineering, Testing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117675>Anitha G</a></td>
+        <td>Navigation Guidance and Control, Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117932>Arivudainambi D</a></td>
+        <td>Computer Networks, Queueing Thoery, Stochastic Processes and its Applications, Operations Research, Cloud Computing, Wireless Sensor Networks, Evolutionary Algorithms, Adhoc Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117754>Arockia Xavier Annie R</a></td>
+        <td>Machine Learning, Artificial Intelligence, Information Security, Compilers, Multimedia networks, P2P, Video Image Processing, Algorithms and Data structures, Information Management</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117699>Arul Selvan S</a></td>
+        <td>Alternative Fuels in Engines, Vehicle Air Conditioning, Control for Automobile Applications, Smart Mobility and Electric Vehicles</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117735>Arul Siromoney</a></td>
+        <td>Software Engineering, AI, Bio-Medical Engineering, Mobile Computing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117941>Aruna P</a></td>
+        <td>Medical Imaging, Brachytherapy, Nano Photonics, Ultrasonics and Montecarlo Simulation</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117698>Arunachalam K</a></td>
+        <td>Active Suspension System, Automotive Eletronics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117842>Balamurugan G</a></td>
+        <td>Communication Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117732>Balasubramanian N</a></td>
+        <td>Hybrid Membrane bioreactor, Battery and Fuel Cell, Graphene Based Polymer Nanocomposite for Energy Storage, Capacitive Deionization, Graphene Based Biomaterials, Electrochemical Treatment of Industrial Effluent, HAZOP and Fault Tree Analysis, Chemical Process Safety</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117862>Bama S</a></td>
+        <td>Computational logic, Artificial Intelligence, Free and Open Source Software</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117929>Baskar Babujee J</a></td>
+        <td>Graph Theory, Formal Languages and Automata Theory.</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57384>Baskaran R</a></td>
+        <td>Scheduling, O R Product Design and Development</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/60587>Baskaran Ramachandran</a></td>
+        <td>Database, Artificial Intelligence, Data Mining, Multimedia</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117801>Bhagyaveni A</a></td>
+        <td>Wireless Communication and Networking, Digital Communication, Adhoc Network, Wireless Sensor Networks, Cognitive Radio Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117830>Bhoopathy Bagan K</a></td>
+        <td>Signal Processing, Image Processing, Data Compression</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/118038>Bhuvaneswaran R S</a></td>
+        <td>Mobile Computing, Wireless Sensor Networks, Image Security, Cryptography</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117829>Bhuvaneswari P T V</a></td>
+        <td>Wireless Sensor Network, Wireless Network, Wireless Communication</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117756>Bose S</a></td>
+        <td>Networks, Web Technology, Multimedia Streaming, Artificial Intelligence</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117797>Chandramohan S</a></td>
+        <td>Power System Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/118037>Chinthamani Chinnaraju</a></td>
+        <td>Wireless Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117739>Chitrakala S</a></td>
+        <td>Computer Vision, Data Mining, Information Retrieval</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117703>Devardjane G</a></td>
+        <td>Automation and Control Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117887>Dhalia Sweetlin J</a></td>
+        <td>Medical Digital Image Processing, Bio Inspired Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117881>Dhananjay Kumar</a></td>
+        <td>Mobile Communication and Computing, Video Streaming and Analysis</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117638>Dhinagaran G</a></td>
+        <td>Environmental Engineering, Water Quality Modeling, Marine Pollution, Industrial Wastewater Treatment, Remote Sensing and GIS Applications in Environmental Management, ANN and Fuzzy Logic Application in Environmental Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117808>Dhurga Devi J</a></td>
+        <td>VLSI, Communication Sytems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117840>Divya A</a></td>
+        <td>Communication Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57543>Easwarakumar K S</a></td>
+        <td>Theoretical Computer Science, Molecular Computing, Multimedia, Network Security</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117820>Ewins Pon Pushpa S</a></td>
+        <td>Real time Embedded System</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117793>Ganesh Kumar Srinivasan</a></td>
+        <td>Power Electronics and Drives</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117841>Ganesh Madhan M</a></td>
+        <td>RF and Optical Communication</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117898>Ganesh Ram A</a></td>
+        <td>Process Control</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117821>Geetha G</a></td>
+        <td>Optical Communication, RF System Design</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117872>Geetha P</a></td>
+        <td>Information Retrieval, Theory of Compution, DBMS, Data Mining</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117741>Geetha Palanisamy</a></td>
+        <td>Image Processing, Pattern Recognition</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117865>Geetha Ramani R</a></td>
+        <td>Data Mining, Evolutionary Algorithms</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/118039>George Washington D</a></td>
+        <td>Wireless Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57430>Gnanavelbabu A</a></td>
+        <td>High-Temperature Wear and Friction Behaviour of Advanced Materials, Machining of Composite Materials, Corrosion Behaviour of Materials, Development and Characterisation of Aluminium Alloys and Composites, Development and Characterisation of Magnesium Alloys and Composites, Polymer Composites, Lean Manufacturing, Value Engineering, Supply Chain Management, Quality by Design, Measurements and Optimization</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117724>Gomathi Priya P</a></td>
+        <td>Electrochemical Environmental Technology, Effluent Treatment, Nano Materials</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117788>Gomathi V</a></td>
+        <td>Power Systems Operation and Control, Cloud Computing Service Oriented Architectures, State Estimation</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57545>Gopal Tadepalli</a></td>
+        <td>Cyber Physical Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117780>Gowri Sree V</a></td>
+        <td>High Voltage Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117803>Gunaseelan K</a></td>
+        <td>Wireless Communication, Digital Signal processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117759>Gunasekaran R</a></td>
+        <td>5G Networks, LTE, LTE-Advanced, Vehicular Networks, Hybrid LiFi/WiFi, Wireless Network Security</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117907>Hansa Lysander Manohar</a></td>
+        <td>Knowledge, Technology and Sustainability Management</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117913>Hariharan P</a></td>
+        <td>Micro Machining, CNC Machine, Robotics, CAM, Machining, Surface Engineering, Composite</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117885>Hemalatha M</a></td>
+        <td>Pattern Recognition, Image Processing and Networking</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117771>Hosimin Thilagar S</a></td>
+        <td>Electrical Machines and Drives, Electric Vehicle Technology, MEMS Technology</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117833>Indira Gandhi S</a></td>
+        <td>Optical Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117877>Indra Ganthi K</a></td>
+        <td>Wireless Sensor Networks, Mobile Computing, Object Oriented Methodologies</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117860>Indumathi J</a></td>
+        <td>Software Engineering, Software Testing, Software Project Management, Information Security, Artificial Intelligence, Knowledge Management, Advanced DBMS, Data Mining, Data Warehousing, Mobile Computing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117825>Indumathi P</a></td>
+        <td>Communication Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117809>Jawahar Senthilkumar V</a></td>
+        <td>VLSI, Applied Electronics and Computer Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117770>Jayachitra V P</a></td>
+        <td>Wireless Sensor Network</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117763>Jayashree Padmanabhan</a></td>
+        <td>Network Security, Object Technologies, Bio informatics,Quantum computing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117814>Jayasree T</a></td>
+        <td>Biomedical Engineering, Electronic Nose, Biomechanics, Rehabilitation Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117815>Jeyalakshmi V</a></td>
+        <td>Internet of Things, Artificial Intelligence, VLSI Testing, Power Optimization, Wireless Sensor Networks, MEMS</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/118034>John Prakash A</a></td>
+        <td>Computer Networks, Cryptography and Network Security, Cloud Computing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117921>Jones Tarcius Doss L</a></td>
+        <td>Numerical Analysis, PDE, Algorithms</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117826>Joy Vasantha Rani S P</a></td>
+        <td>VLSI</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117637>Kalaimagal S</a></td>
+        <td>Microcontroller, Mechatronics, Industrial Robotics, Mechatronics, Control Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117893>Kalpana D</a></td>
+        <td>Modeling and Control</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117804>Kamala J</a></td>
+        <td>VLSI, Control Systems, Solar Energy</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117969>Kanchana M</a></td>
+        <td>Printed Electronics, Smart Packaging</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/60526>Kannan Arputharaj</a></td>
+        <td>Network Security, Data Mining, Artificial Intelligence and Software Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117843>Kannan M</a></td>
+        <td>VLSI and Networking</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117757>Karthika Devi M S</a></td>
+        <td>Data Structures, Database Systems, Data Mining</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117980>Karthikeyan P</a></td>
+        <td>Mechatronics, Robotics, Brain Computer Interface, Machine Learning and Fusion</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57469>Karunamoorthy L</a></td>
+        <td>Metal Cutting, Mechatronics, Automation, Composite Material, Material Characterisation</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117765>Kathiroli R</a></td>
+        <td>Security in Mobile Adhoc Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117796>Kavitha A</a></td>
+        <td>Non Linear Dynamics in Power Converters, Special Electrical Machines</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117844>Kavitha G</a></td>
+        <td>Bio Medical Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/118036>Khanna Nehemiah H</a></td>
+        <td>Software Engineering, Database Systems, Data Mining, Image Processing, Artificial Intelligence</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117884>Kola Sujatha P</a></td>
+        <td>Intrusion Detection System, Data Mining and Soft Computing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/22643>Krishnakumar B</a></td>
+        <td>Applied Probability and Stochastic Processes, Queueing Network Models, Mathematical Ecology</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117867>Kulithungan K</a></td>
+        <td>Computer Networks, Wireless Adhoc and Sensor Networks, Internet of Things, Embedded Systems, Network Security, Web Design and Management, Andriod Applications, Database Concepts</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117900>Kumar S</a></td>
+        <td>Soft Sensing, State and Parameter Estimation</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117649>Kumaravel V</a></td>
+        <td>Bio Signal Processing, Medical Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117985>Kumaresan V</a></td>
+        <td>Fans and Blowers, Design of Heat Exchangers, Thermal Engineering, Heat Transfer, Power Plant Engineering, Nanofluids</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117789>Kumudini Devi R P</a></td>
+        <td>Power Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117775>Lakshmi P</a></td>
+        <td>Soft Computing Techniques, Process Control, Power Syetem Stability</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117794>Latha K</a></td>
+        <td>Fuel Cells, Power Electronics, Drives, Electrical Machines</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117811>Laxmikandan T</a></td>
+        <td>Communication Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/118040>Lokesh Sivanandam</a></td>
+        <td>C Programming, JAVA</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117883>Lydia Elizabeth B</a></td>
+        <td>Cloud Security, Information Security, Computer Networks and Mobile Communication</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117737>Mahalakshmi G S</a></td>
+        <td>Logic, Knowledge Representation, Mining, NLP, Cognitive Poetics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57433>Mahalakshmi N V</a></td>
+        <td>Advanced Thermodynamics, Computational Fluid Dynamics, Instrumentation for Thermal Systems, Jet and Rocket Propulsion, Internal Combustion Engine Design, Engine Auxiliary Systems for Post Graduate Students in Internal Combustion Engineering, Applied Thermodynamics, Thermal Engineering, Engineering Graphics, Gas Dynamics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117846>Mala John</a></td>
+        <td>Communication and Signal Processing, Image Processing and Pattern Recognition</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117859>Mala T</a></td>
+        <td>Natural Language Processing, Computer Graphics, Multimedia, Cloud Computing, Distributed Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117810>Malathi K</a></td>
+        <td>Microwave Engineering, Antenna Design, Planar Transmission Lines, EMI/EMC, Signal Integrity in High Speed Design</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117890>Manamalli D</a></td>
+        <td>Process Control</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117839>Manikandan M</a></td>
+        <td>Image Processing, Biomedical Systems, Vlsi Computing, Cloud Security</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117818>Manimekalai T</a></td>
+        <td>Wireless Communication , Signal processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117755>Manjula D</a></td>
+        <td>NLP, Text Mining, Parallel Processing, Grid Computing, Databases</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117834>Mariammal K</a></td>
+        <td>VLSI, Signal Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117743>Mary Anita Rajam V</a></td>
+        <td>Image Processing, Computer Networks, Security, Machine Learning</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/18140>Meenakshi M</a></td>
+        <td>Digital, Wireless and Optical Communication - Physical and MAC Layer, UWB in WBAN Systems, Light-Weight Cryptography, Material Distributive Topology Based Antenna Design, Machine Learning for Wireless Communications</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117837>Meganathan D</a></td>
+        <td>VLSI</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117899>Meyyappan S</a></td>
+        <td>Fault Tolerant Digital Systems Design</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57431>Mohan B</a></td>
+        <td>Machine Drawing, Engineering Statistics and Quality Control, Machine Design, Fluid Power Control, Welding Technology, Mechanical Metallurgy, Elements of Production Techniques, Finite Element Analysis in Manufacturing, Hydraulics and Pneumatics, Fluid Power Automation, Hydraulics and Pneumatics System Design, Advanced Materials Technology, Finite Element Analysis in Manufacturin</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/36608>Moorthy T V</a></td>
+        <td>Composite Materials, Mettalurgy and Material Science, Computer Aided Inspection and Total Quality Management, CAD and CAM, Robotics, Material Science and Engineering, Creativity and Innovation</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117936>Muniasamy G</a></td>
+        <td>Combinatorial Representation Theory</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/118032>Murugan K</a></td>
+        <td>Wireless Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117787>Muthukumar S</a></td>
+        <td>Renewable Energy, Switching Mode Power Supply, Power Electronic Drives</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117764>Muthurajkumar Sannasy</a></td>
+        <td>Cloud Computing, Data Mining</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117897>Mythily M</a></td>
+        <td>Modeling and Control of Industrial Process, Industrial Instrumentation</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117767>Nancy Jane Y</a></td>
+        <td>Machine Learning, Soft Computing, Data Mining and Data Warehousing, Clinical Data Analytics, Health-care Intelligence and Real-time Decision Making Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/24179>Natarajan E</a></td>
+        <td>Thermal Engineering, Power Plant Engineering, Gas Dynamics, Aerodynamics, Jet Propulsion, Gas Turbines, Fluid Bed Systems, Boiler Technology, Combustion Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117896>Natarajan V</a></td>
+        <td>Cryptography</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117986>Natchimuthu N</a></td>
+        <td>Polymer Blends, Interpenetrating Polymer Networks, Rubber Recycling, Rubber Compounding and Product Development, Reinforcement of Elastomers, Polymer Synthesis, Rubber Metal Bonding</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117761>Neelavathy Pari S</a></td>
+        <td>Security in Wireless Network</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57541>Nirmala Devi S</a></td>
+        <td>Medical Electronics, Medical Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117807>Nirmalkumar P</a></td>
+        <td>Reconfigurable Computing, VLSI for Wireless Communication, Evolvable Hardware</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117914>Omkumar M</a></td>
+        <td>Scheduling, Optimization, Metaheuristics, Simulation, Metrology</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117769>Pabitha P</a></td>
+        <td>Internet Computing, Semantic Web, Machine Intelligence, Software Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117857>Padmanabhan Panchu K</a></td>
+        <td>Operations Scheduling, and Robotics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117639>Palanivelu K</a></td>
+        <td>Pollution Control, Carbon Capture</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57376>Paul Robert T</a></td>
+        <td>Maintenance and Reliability Engineering, Engineering Quality Control, Operations Scheduling</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117831>Piramasubramanian S</a></td>
+        <td>Optical Communication, RF Engineering, Antenna</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117762>Ponsy R K Sathia Bhama</a></td>
+        <td>Scheduling in Grid Computing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117650>Poonguzhali S</a></td>
+        <td>Biomedical Instrumentation, Medical Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/43400>Prakash J</a></td>
+        <td>Control and Instrumerntation Engineering, Technologies, Bio Technology</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117838>Prakash P</a></td>
+        <td>Signal Processing, Optical Signal Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117636>Prasanna V</a></td>
+        <td>Non Traditional Machining Processes, Hydraulics and Pneumatics, Mechatronics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117729>Pratheeba C N</a></td>
+        <td>Process Modeling and Simulation Chemical and Catalytic Reaction Engineering Combustion</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117964>Pratheep Moses K</a></td>
+        <td>Planning Theory, Transportation Planning, Land Suitability Analysis and Land Use Modeling, Zonal and Local Area Planning, Planning Norms and Standards, Network Planning, Urban Renewal, GIS Applications in Planning, Environmental Planning and Policies</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117822>Praveen K</a></td>
+        <td>Digital Signal and Image Processing, Embedded Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117781>Pugazhendhi Sugumaran C</a></td>
+        <td>High Voltage Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117824>Pushpalatha V</a></td>
+        <td>Communication Systems and Networking</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117882>Radha Senthil Kumar</a></td>
+        <td>XML Technology, Database Management Systems, Web Information Retrieval, Data Mining, Fuzzy Logic</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117791>Radhakrishnan N</a></td>
+        <td>Embedded Linux, Microcontrollers and SoC Boards, Multimodal Biometrics, Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117938>Ragavananthan S</a></td>
+        <td>Engineering Mechanics, Soild Mechanics, Fluid Mechanics, Engineering Graphics, Kinematics and Dynamics, Design of Machine Elements, Design of Transmission Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117740>Raghuveera T</a></td>
+        <td>HCI, Video and Image Processing, Multimedia and Computer Graphics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/97757>Rajesh G</a></td>
+        <td>Internet of Things, Machine Learning, Computational Intelligence, Software Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117802>Ramadass N</a></td>
+        <td>Embedded System, VLSI Design and Reconfigurable Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117823>Ramakrishna P V</a></td>
+        <td>VLSI, Digital Communication and RF System Design</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117800>Ramana Rao Y V</a></td>
+        <td>Digital Signal and Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57379>Ramesh Babu T</a></td>
+        <td>Manufacturing Management, Robotics Decision Support and Expert Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57359>Ramesh Babu Thangavelu</a></td>
+        <td>Work System Design, Ergonomics, Decision Support System, Manufacturing Automation, Professional Ethics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117784>Ramesh R</a></td>
+        <td>Power Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117875>Ranjani Parthasarathi</a></td>
+        <td>Computer Architecture, Multicore Computing, Reconfigurable Computing, Adhoc Networks, Indian Knowledge System and Language Technology</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/118016>Rashia Begum S</a></td>
+        <td>Kinematics of Machines, Dynamics of Machines, Design of Machine Elements, Design of Transmission Systems, Finite Element Analysis, Engineering Mechanics, Engineering Graphics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117779>Rathnakannan K</a></td>
+        <td>Nano Electronics, VLSI, MEMS, Reconfigurable Computing, Embedded Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117750>Renugadevi S</a></td>
+        <td>Database Systems, Data Structures</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/118033>Rhymend Uthariaraj V</a></td>
+        <td>Network Security</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117835>Rimmya C</a></td>
+        <td>RF and Optical Engineeering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117817>Sakthivel P</a></td>
+        <td>VLSI Systems and Electronic Design Automation</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57475>Sampathkumar S</a></td>
+        <td>Condition Monitoring, Low Cost Automation, Acoustic Emission Technique Application, CIM, NDT</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117888>Sangeetha D</a></td>
+        <td>Cloud Computing, Cryptography and Security, Web Services, Database Management System</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57552>Sanjeevi S</a></td>
+        <td>Satellite Image Processing and GIS Hyperspectral Remote Sensing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117798>Sanjib Kumar Patanaik</a></td>
+        <td>Robust control Applications</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/36617>Saravanabava T P</a></td>
+        <td>Computer Network, Object Oriented Programming</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117664>Saravanan Ramasamy</a></td>
+        <td>Groundwater Assessment and Management - Multi Aquifer Modeling, Artificial Recharge Studies, Contaminant Transport Modeling, Regional Modeling, Water Resources Management - Flood Modeling for Sustainable development, Rainwater Harvesting, Environmental Engineering - GIS for Solid Waste Management, Water Supply Distribution Planning and Management, Evolutionary Algorithms and their Applications to Water Resources Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117690>Saravanan S</a></td>
+        <td>Digital Architecture</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57542>Sasikala M</a></td>
+        <td>Bio Signal Processing, Medical Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117871>Saswati Mukherjee</a></td>
+        <td>Cloud Computing, Distributed System, Operating System Design, Data Structures</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117832>Sathiesh Kumar V</a></td>
+        <td>Opto-Mechatronic System Design</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117806>Seetharaman R</a></td>
+        <td>Electromagnetic Compatibility</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117742>Selvamani K</a></td>
+        <td>Information Security, Human Computer Interface, Computer Networks, Cloud Computing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117878>Selvi Ravidran</a></td>
+        <td>Sensor Networks, Mobile Computing, Distributed and Cloud Computing, Computer Architecture, Internet Of Things</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117864>Sendhilkumar S</a></td>
+        <td>Web Mining, Data Mining, Semantic Web, Data Warehousing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117707>Senthil Kumar M</a></td>
+        <td>Automation and Control Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/36613>Senthil Kumaran S</a></td>
+        <td>Physical Metallurgy, Welding Technology, Metal Forming, Mechatronics, Metrology and Computer Aided Inspection, Metal Casting</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57353>Senthil R</a></td>
+        <td>Steel and Space Structures, Composite Structures, Fibre Optics Sensors Applications</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117671>Senthilkumar K</a></td>
+        <td>Avionics, Unmanned Aerial Vehicle Systems, Aircraft, Guidance and Control</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117772>Senthilkumar V</a></td>
+        <td>Power Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/36622>Sethumadhavan R</a></td>
+        <td>Energy Conservation, Energy Auditing, Renewable Energy and its Applications, Waste Management, Power Plant consultancy, Demand Side Management</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117752>Shanmuga Priya M</a></td>
+        <td>Data Mining, Data Structures</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57434>Shanmuga Sundaram K</a></td>
+        <td>Design of Hydraulic and Pneumatic Systems, Theory of Machines, Machine Design, Design of Machine Elements, Design of Transmission Systems, Finite Element Analysis, Computer Aided Design, Product Design and Development, Additive Manufacturing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117749>Shanthi A P</a></td>
+        <td>Neural Networks, Micro Processors, Computer Architecture</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117777>Sharmeela C</a></td>
+        <td>Power Systems, Power Quality</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/57539>Shenbaga Devi S</a></td>
+        <td>Bio Signal Processing, Medical Image Processing, Brain Computer Interface Applications</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117751>Shiloah Elizabeth D</a></td>
+        <td>Digital Image Processing, Digital Signal Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117813>Sittalatchoumy R</a></td>
+        <td>Wireless Sensor Networks, Communication Networks, Microcontroller, Linear Integrated Circuits</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117783>Sivaprakasam A</a></td>
+        <td>Control of Electrical Machines, Power Electronics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117974>Sivaramakrishnan R</a></td>
+        <td>Composites, CIM and Robotics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117776>Somasundaram P</a></td>
+        <td>Power Systems, AI Applications to Power System Problems, Hybrid Microgrid, Renewable Energy, HVDC and FACTS</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117836>Sridevi C</a></td>
+        <td>Image processing, Parallel Architectures</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117873>Sridhar S</a></td>
+        <td>Image Processing, Medical Imaging, Data Mining, Algorithms</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/92805>Sridharan D</a></td>
+        <td>Electronics and Communication Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117895>Srinivasan S</a></td>
+        <td>Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117828>Subashri T</a></td>
+        <td>Network, Cryptography and Network Security</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117919>Subhashini S V</a></td>
+        <td>Computational Fluid Mechanics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117790>Sudar Oli Selvi T</a></td>
+        <td>Power Electronics and Drives</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117738>Sudha S</a></td>
+        <td>Embedded Systems, Real Time Systems, VLSI Design</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/29943>Suganthi L</a></td>
+        <td>Theory Building, Quantitative Analysis, Data Analytics, Soft Computing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117812>Sujatha C M</a></td>
+        <td>Biomedical Signal and Image Processing, Respiratory Biomechanics, Machine Learning Techniques</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117880>Sumalatha M R</a></td>
+        <td>Distributed Systems, Cloud Computing, Big Data Analytics, Social Platforms, Data Security and Privacy</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117845>Sumithra G</a></td>
+        <td>Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117868>Swamynathan S</a></td>
+        <td>Distributed Computing, Advanced Databases, Artificial Intelligence</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117758>Thamarai Selvi S</a></td>
+        <td>Grid Computing, Cloud Computing and Neural Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117768>Thanasekhar B</a></td>
+        <td>Programming Models, GPU Computing, Compilers, Automata Theory</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117870>Thangaraj N</a></td>
+        <td>Computer Networks, Multimedia, Green Computing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117889>Thyagarajan T</a></td>
+        <td>Intelligent Control</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117869>Uma E</a></td>
+        <td>Service Oriented Architecture, XML and Web Services Security, Android Application Development, Software Testing, C# and Net Programming, User Interface Design</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117774>Uma G</a></td>
+        <td>Power Electronics, Power Quality, Non Linear Dynamics of PE Circuits, Microgrids</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117858>Uma G V</a></td>
+        <td>Software Engineering, Software Testing, Software Quality Assurance, Natural Language Processing, Information Security</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117816>Uma Maheswari O</a></td>
+        <td>Non Linear Signal Processing, Analysis of MRI, Enhancing the Underwater Images</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117747>Uma Maheswari P</a></td>
+        <td>Data Mining, Big Data Analytics, Deep Learning, Pattern Recognition, Tamil Inscription Processing, Information Retrieval, IoT Solutions, Software Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117792>Uma S</a></td>
+        <td>Embedded Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117773>Umamaheswari Bhaskaran</a></td>
+        <td>Electrical Machines, Motor Control, Control Theory</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117886>Umamaheswari S</a></td>
+        <td>VLSI, Embedded Systems</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117778>Usa S</a></td>
+        <td>High Voltage Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117760>Valliyammai C</a></td>
+        <td>Cloud Computing, Big Data, Databases, Grid Computing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117786>Valsalal P</a></td>
+        <td>Electrical Engineering</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117785>Vanaja Ranjan P</a></td>
+        <td>Digital Signal Processing, Embedded Systems Technology</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117874>Vani K</a></td>
+        <td>Signal Processing, Image Processing, Remote Sensing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117766>Varalakshmi P</a></td>
+        <td>Cloud Computing, Security, Networks, Wireless Sensor Networks, Mobile Computing, Compiler, Theory of Computation, Internet Of Things</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117891>Vasanthi D</a></td>
+        <td>Modeling and Control of Process</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117827>Vasuhi S</a></td>
+        <td>RF Microwave Engineering, Image Processing</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117745>Velammal B L</a></td>
+        <td>Image Processing, Multimedia Technologies, Data bases and Mining</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117954>Velraj G</a></td>
+        <td>Spectroscopy and Materials Science</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117748>Velvizhy P</a></td>
+        <td>Recommendation Systems, Object Oriented System Development</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117746>Vetriselvi V</a></td>
+        <td>Mobile Computing, Network Security</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117863>Vidya K</a></td>
+        <td>Inter Domain Routing, Security in Inter Domain Routing, Performance Analysis, Wireless Networks</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117799>Vijaya N</a></td>
+        <td>Analog VLSI, Digital VLSI</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117901>Vijayakarthick M</a></td>
+        <td>Process Control</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117795>Vijayalakshmi M</a></td>
+        <td>Control Systems in Renewable Energy</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117876>Vijayalakshmi M</a></td>
+        <td>Mobile Databases, Mobile and Cloud Computing, Web Technology, Programming Languages and Algorithms</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117931>Vijayalakshmi V</a></td>
+        <td>Graph Theory and Combinatorics</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/22879>Vijayaraju P</a></td>
+        <td>Fuzzy Set Theory, Functional Analysis, Non-Linear Functional Analysis</td>
+        </tr>
+        <tr>
+        <td><a href=https://annauniv.irins.org/profile/117866>Yogesh P</a></td>
+        <td>Computer Networks, Mobile Computing, Multimedia Communication, Web Technology</td>
+        </tr>
+    </table>
+    <script data-config>
+      function filter(evt) {
+        var frm = document.forms[0];
+        //var slcCols = frm.slcColumns;
+        //var slcOperators = frm.slcOperators;
+        var slcOperators = "*";
+        //console.log(slcOperators.value)
+        var inp = frm.inpSearch;
+        var inpv = inp.value;
+        //console.log(inpv)
+        var query = slcOperators + inpv;
+        //console.log(query);
+
+        // Set the column's filter value
+        tf.setFilterValue(0, query);
+
+        // Filter the table
+        tf.filter();
+
+        // Prevent form submission
+        evt.preventDefault();
+      }
+
+      var filtersConfig = {
+        base_path: "tablefilter/",
+        highlight_keywords: true,
+        single_filter: {
+          exclude_cols: [1],
+          css_class: "form-control",
+        },
+        //help_instructions: true,
+        filters_row_index: 1,
+        state: false,
+        alternate_rows: true,
+        msg_filter: "Search...",
+        no_results_message: {
+          content:
+            "The name you entered does not correspond to a faculty in Anna University as per our database",
+        },
+        extensions: [
+          // Extensions load addititional script files
+          {
+            name: "filtersVisibility",
+            visible_at_start: false,
+            target_id: "filtersToggle",
+            btn_html: "<button>Toggle filters<\/button>",
+          },
+          { name: "sort" }, // Sort requires to classify numeric columns using "col_types : [ 'numeric', String', ...],"
+        ],
+      };
+      var tf = new TableFilter(
+        document.querySelector(".aoi-table"),
+        filtersConfig
+      );
+      tf.init();
+      //var feature = tf.feature('dropdown');
+      //feature.refreshAll();
+    </script>
+  </body>
+</html>

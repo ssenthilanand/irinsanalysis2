@@ -1,0 +1,2510 @@
+<!DOCTYPE html>
+<html class="element" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta lang="en" />
+    <meta
+      name="description"
+      content="Analysis of Anna University IRINS data."
+    />
+    <meta name="viewport" content="initial-scale=1" />
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="css/sakura.css" />
+    <title>Anna University Chennai Research Ranking</title>
+    <link rel="stylesheet" type="text/css" href="tablefilter/style/tablefilter.css" />
+  <style>
+    /**
+     * Custom CSS definitions as per TableFilter configuration
+     */
+    .myLoader {
+      position: absolute;
+      padding: 5px;
+      margin: 100px 0 0 5%;
+      width: auto;
+      z-index: 1000;
+      font-size: 12px;
+      font-weight: bold;
+      border: 1px solid #666;
+      background: #ffffcc;
+      vertical-align: middle;
+    }
+
+    .myStatus {
+      width: auto;
+      display: block;
+    }
+  </style>
+  </head>
+
+  <body>
+    <header style="text-align: center">
+      <h2>Major Areas of R&D Specialisation in Anna University.</h2>
+      <strong><h4>The Area of Interest List</h4></strong>
+      <a href="index.html">To Main Page</a>
+      <br>
+      <a href="facsearch.html">To Faculty Search</a>
+    </header>
+
+    <br />
+    <!-- There are two options for search available here: -->
+    <!-- <ol>
+      <li> -->
+    Around 320 topics of interest in Electrical, Information and Computing
+    streams to Anna University faculty are given here in alphabetical order; you
+    can scroll down to the item you are looking for and find the faculty
+    involved and their IRINS page.
+    <!-- </li>
+      <div style="text-align: center">OR</div>
+      <li>
+        Enter the name of the area of specialisation you want to search inside
+        the search box. The search will return the names of faculty members from
+        Anna University involved in that area, linked to their IRINS pages.
+      </li>
+    </ol> -->
+    <!--     <p>
+      Over 900 topics of interest to Anna University faculty are given here in alphabetical order; 
+      you can scroll down and select the item you are looking for and find the faculty involved which is also linked to their IRINS page.
+    </p> -->
+    <br />
+    <!-- <div style="text-align: center;">
+  <button type="reset" class="btn btn-link" onclick="window.history.back();">Return</button>
+</div> -->
+    <!-- <form class="navbar-form navbar-left" onsubmit="filter(event);">
+    <div class="input-group" style="text-align: center;">
+        <label for="slcOperators">Search Area of Interest</label>
+        <div class="input-group-btn" style="visibility: hidden;">
+          <select id="slcOperators" name="slcOperators" class="form-control">
+              <option value="*">Containing</option>
+              <option value="=">Exactly matching</option>
+              <option value="!">Excluding</option>
+              <option value="rgx:">Matching RegEx</option>
+              <option value="{">Starts with</option>
+              <option value="}">Ends with</option>
+              <option value="<">Less than</option>
+              <option value="<=">Less than or equal to</option>
+              <option value=">">Greater than</option>
+              <option value=">=">Greater than or equal to</option>
+              <option value="[empty]">Only empty</option>
+              <option value="[nonempty]">Only non-empty</option>
+          </select>
+      </div>
+        <input name="inpSearch" type="text" class="form-control" onfocus="this.value=''" placeholder="Search" autofocus>
+        <button type="reset" class="btn btn-default">Search</button>
+        <button type="reset" class="btn btn-link" onclick="tf.clearFilters();">Clear</button>
+        <button type="reset" class="btn btn-link" onclick="window.history.back();">Return</button>
+    </div>
+  </form> -->
+
+    <script src="tablefilter/tablefilter.js"></script>
+  <div id="filtersToggle" style="visibility: hidden;"></div>
+
+    <table id="aoi-table" class="aoi-table" style="text-align: left">
+      <thead style="text-align: center">
+        <th colspan="2"><strong>Area of Interest</strong></th>
+        <!-- <th>Expert ID</th> -->
+      </thead>
+      <tr>
+        <td>5G Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117759>Prof R Gunasekaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Acoustic Emission Technique Application</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57475>Prof S Sampathkumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Adhoc Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117765>Dr R Kathiroli</a><br>
+            <a href=https://annauniv.irins.org/profile/117875>Prof Ranjani Parthasarathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117932>Prof D Arivudainambi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Advanced Databases</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117868>Prof S Swamynathan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Advanced DBMS</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>AI</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117735>Prof Arul Siromoney</a><br>
+            <a href=https://annauniv.irins.org/profile/117776>Prof P Somasundaram</a><br>
+            <a href=http://au-kbc.org/nlp/sobha.html>Dr L Sobha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>AI Applications to Power System Problems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117776>Prof P Somasundaram</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>AI Applications to Power System Problems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117776>Prof P Somasundaram</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Algorithms</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117664>Dr Saravanan Ramasamy</a><br>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+            <a href=https://annauniv.irins.org/profile/117865>Prof R Geetha Ramani</a><br>
+            <a href=https://annauniv.irins.org/profile/117873>Prof S Sridhar</a><br>
+            <a href=https://annauniv.irins.org/profile/117876>Dr M Vijayalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117921>Prof L Jones Tarcius Doss</a><br>
+            <a href=https://annauniv.irins.org/profile/117932>Prof D Arivudainambi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Algorithms and Data structures</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Analog VLSI</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117799>Mrs N Vijaya</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Analysis of MRI</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117816>Prof O Uma Maheswari</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Android Application Development</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117869>Dr E Uma</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Android Application Development</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117869>Dr E Uma</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>ANN and Fuzzy Logic Application in Environmental Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117638>Dr Dhinagaran G</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Antenna Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/18140>Prof Meenakshi M</a><br>
+            <a href=https://annauniv.irins.org/profile/117810>Prof K Malathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Antennas</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117805>Dr M Shanmugapriya</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Applied Electronics and Computer Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117809>Prof V Jawahar Senthilkumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Applied Electronics and Computer Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117809>Prof V Jawahar Senthilkumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Artificial Intelligence</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/60526>Dr Kannan Arputharaj</a><br>
+            <a href=https://annauniv.irins.org/profile/60587>Dr Baskaran Ramachandran</a><br>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+            <a href=https://annauniv.irins.org/profile/117756>Prof S Bose</a><br>
+            <a href=https://annauniv.irins.org/profile/117815>Prof V Jeyalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117861>Dr S Abirami</a><br>
+            <a href=https://annauniv.irins.org/profile/117862>Dr S Bama</a><br>
+            <a href=https://annauniv.irins.org/profile/117868>Prof S Swamynathan</a><br>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+            <a href=https://annauniv.irins.org/profile/118036>Prof H Khanna Nehemiah</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Artificial Intelligence and Software Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/60526>Dr Kannan Arputharaj</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Artificial Intelligence and Software Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/60526>Dr Kannan Arputharaj</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Artificial Neural Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Artificial Neural Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Automata Theory</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117768>Dr B Thanasekhar</a><br>
+            <a href=https://annauniv.irins.org/profile/117929>Dr Baskar Babujee J</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Automation</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57359>Prof Ramesh Babu Thangavelu</a><br>
+            <a href=https://annauniv.irins.org/profile/57431>Prof B Mohan</a><br>
+            <a href=https://annauniv.irins.org/profile/57469>Prof Karunamoorthy L</a><br>
+            <a href=https://annauniv.irins.org/profile/57475>Prof S Sampathkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117703>Prof G Devardjane</a><br>
+            <a href=https://annauniv.irins.org/profile/117707>Prof M Senthil Kumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117817>Prof P Sakthivel</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Automation and Control Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117703>Prof G Devardjane</a><br>
+            <a href=https://annauniv.irins.org/profile/117707>Prof M Senthil Kumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Automotive Electronics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117698>Dr K Arunachalam</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Big Data</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117747>Dr P Uma Maheswari</a><br>
+            <a href=https://annauniv.irins.org/profile/117760>Dr C Valliyammai</a><br>
+            <a href=https://annauniv.irins.org/profile/117880>Prof M R Sumalatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Big Data Analytics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117747>Dr P Uma Maheswari</a><br>
+            <a href=https://annauniv.irins.org/profile/117880>Prof M R Sumalatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Bio Medical Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117844>Dr G Kavitha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Bio Signal Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57539>Prof S Shenbaga Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/57542>Dr M Sasikala</a><br>
+            <a href=https://annauniv.irins.org/profile/117649>Prof V Kumaravel</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Biomedical Instrumentation</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117650>Dr S Poonguzhali</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Biomedical Signal and Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117812>Dr C M Sujatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Brain Computer Interface</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57539>Prof S Shenbaga Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/117980>Dr P Karthikeyan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Brain Computer Interface Applications</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57539>Prof S Shenbaga Devi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>C Programming</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/118040>Mr Lokesh Sivanandam</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>C# and Net Programming</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117869>Dr E Uma</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Clinical Data Analytics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117767>Dr Y Nancy Jane</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cloud Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117742>Dr K Selvamani</a><br>
+            <a href=https://annauniv.irins.org/profile/117758>Prof S Thamarai Selvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117760>Dr C Valliyammai</a><br>
+            <a href=https://annauniv.irins.org/profile/117764>Dr Muthurajkumar Sannasy</a><br>
+            <a href=https://annauniv.irins.org/profile/117766>Dr P Varalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117788>Dr V Gomathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117859>Dr Mala T</a><br>
+            <a href=https://annauniv.irins.org/profile/117871>Prof Saswati Mukherjee</a><br>
+            <a href=https://annauniv.irins.org/profile/117876>Dr M Vijayalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117878>Dr Selvi Ravidran</a><br>
+            <a href=https://annauniv.irins.org/profile/117880>Prof M R Sumalatha</a><br>
+            <a href=https://annauniv.irins.org/profile/117888>Dr D Sangeetha</a><br>
+            <a href=https://annauniv.irins.org/profile/117932>Prof D Arivudainambi</a><br>
+            <a href=https://annauniv.irins.org/profile/118034>Dr A John Prakash</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cloud Computing and Neural Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117758>Prof S Thamarai Selvi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cloud Computing Service Oriented Architectures</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117788>Dr V Gomathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cloud Security</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117839>Dr M Manikandan</a><br>
+            <a href=https://annauniv.irins.org/profile/117883>Dr B Lydia Elizabeth</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cloud Security</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117839>Dr M Manikandan</a><br>
+            <a href=https://annauniv.irins.org/profile/117883>Dr B Lydia Elizabeth</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cognitive Radio Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117801>Prof A Bhagyaveni</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cognitive Radio Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117801>Prof A Bhagyaveni</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Combinatorial Representation Theory</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117936>Dr G Muniasamy</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Communication and Signal Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117846>Prof Mala John</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Communication Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117813>Dr R Sittalatchoumy</a><br>
+            <a href=https://annauniv.irins.org/profile/117825>Prof P Indumathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Communication Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117813>Dr R Sittalatchoumy</a><br>
+            <a href=https://annauniv.irins.org/profile/117825>Prof P Indumathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Communication Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117811>Dr T Laxmikandan</a><br>
+            <a href=https://annauniv.irins.org/profile/117824>Mrs V Pushpalatha</a><br>
+            <a href=https://annauniv.irins.org/profile/117840>Mrs A Divya</a><br>
+            <a href=https://annauniv.irins.org/profile/117842>Dr G Balamurugan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Communication Systems and Networking</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117824>Mrs V Pushpalatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Communication Systems and Networking</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117824>Mrs V Pushpalatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Compilers</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+            <a href=https://annauniv.irins.org/profile/117768>Dr B Thanasekhar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Computational Intelligence</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/97757>Dr Rajesh G</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Computational logic</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117862>Dr S Bama</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Computer Architecture</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117749>Prof A P Shanthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117875>Prof Ranjani Parthasarathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117878>Dr Selvi Ravidran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Computer Graphics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117740>Dr Raghuveera T</a><br>
+            <a href=https://annauniv.irins.org/profile/117859>Dr Mala T</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Computer Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117736>Prof S Valli</a><br>
+            <a href=https://annauniv.irins.org/profile/117742>Dr K Selvamani</a><br>
+            <a href=https://annauniv.irins.org/profile/117743>Prof Mary Anita Rajam V</a><br>
+            <a href=https://annauniv.irins.org/profile/117809>Prof V Jawahar Senthilkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117866>Prof P Yogesh</a><br>
+            <a href=https://annauniv.irins.org/profile/117867>Dr K Kulithungan</a><br>
+            <a href=https://annauniv.irins.org/profile/117870>Dr N Thangaraj</a><br>
+            <a href=https://annauniv.irins.org/profile/117883>Dr B Lydia Elizabeth</a><br>
+            <a href=https://annauniv.irins.org/profile/117932>Prof D Arivudainambi</a><br>
+            <a href=https://annauniv.irins.org/profile/118034>Dr A John Prakash</a><br>
+            <a href=https://annauniv.irins.org/profile/118035>Dr S Anbuchelian</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Computer Networks and Mobile Communication</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117883>Dr B Lydia Elizabeth</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Computer Networks and Operating Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117736>Prof S Valli</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Computer Vision</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117739>Prof S Chitrakala</a><br>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Control and Instrumerntation Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/43400>Dr J Prakash</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Control for Automobile Applications</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117699>Dr S Arul Selvan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Control of Electrical Machines</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117783>Dr A Sivaprakasam</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Control of Electrical Machines</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117783>Dr A Sivaprakasam</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Control Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117637>Ms S Kalaimagal</a><br>
+            <a href=https://annauniv.irins.org/profile/117703>Prof G Devardjane</a><br>
+            <a href=https://annauniv.irins.org/profile/117707>Prof M Senthil Kumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117795>Dr M Vijayalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117804>Dr J Kamala</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Control Theory</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117773>Prof Umamaheswari Bhaskaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cryptography</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/18140>Prof Meenakshi M</a><br>
+            <a href=https://annauniv.irins.org/profile/117828>Dr T Subashri</a><br>
+            <a href=https://annauniv.irins.org/profile/117888>Dr D Sangeetha</a><br>
+            <a href=https://annauniv.irins.org/profile/117896>Prof V Natarajan</a><br>
+            <a href=https://annauniv.irins.org/profile/118034>Dr A John Prakash</a><br>
+            <a href=https://annauniv.irins.org/profile/118038>Prof R S Bhuvaneswaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cryptography and Network Security</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117828>Dr T Subashri</a><br>
+            <a href=https://annauniv.irins.org/profile/118034>Dr A John Prakash</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cryptography and Security</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117888>Dr D Sangeetha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Cyber Physical Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57545>Prof Gopal Tadepalli</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Data Analytics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/29943>Prof L Suganthi</a><br>
+            <a href=https://annauniv.irins.org/profile/57428>Dr M Rajmohan</a><br>
+            <a href=https://annauniv.irins.org/profile/117747>Dr P Uma Maheswari</a><br>
+            <a href=https://annauniv.irins.org/profile/117767>Dr Y Nancy Jane</a><br>
+            <a href=https://annauniv.irins.org/profile/117861>Dr S Abirami</a><br>
+            <a href=https://annauniv.irins.org/profile/117880>Prof M R Sumalatha</a><br>
+            <a href=https://annauniv.irins.org/profile/118035>Dr S Anbuchelian</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Data Compression</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117830>Prof K Bhoopathy Bagan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Data Mining</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/60526>Dr Kannan Arputharaj</a><br>
+            <a href=https://annauniv.irins.org/profile/60587>Dr Baskaran Ramachandran</a><br>
+            <a href=https://annauniv.irins.org/profile/117739>Prof S Chitrakala</a><br>
+            <a href=https://annauniv.irins.org/profile/117747>Dr P Uma Maheswari</a><br>
+            <a href=https://annauniv.irins.org/profile/117752>Dr M Shanmuga Priya</a><br>
+            <a href=https://annauniv.irins.org/profile/117757>Ms M S Karthika Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/117764>Dr Muthurajkumar Sannasy</a><br>
+            <a href=https://annauniv.irins.org/profile/117767>Dr Y Nancy Jane</a><br>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117864>Dr S Sendhilkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117865>Prof R Geetha Ramani</a><br>
+            <a href=https://annauniv.irins.org/profile/117872>Dr P Geetha</a><br>
+            <a href=https://annauniv.irins.org/profile/117873>Prof S Sridhar</a><br>
+            <a href=https://annauniv.irins.org/profile/117882>Dr Radha Senthil Kumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117884>Dr P Kola Sujatha</a><br>
+            <a href=https://annauniv.irins.org/profile/118036>Prof H Khanna Nehemiah</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Data Security and Privacy</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117880>Prof M R Sumalatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Data Structures</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117750>Dr S Renugadevi</a><br>
+            <a href=https://annauniv.irins.org/profile/117752>Dr M Shanmuga Priya</a><br>
+            <a href=https://annauniv.irins.org/profile/117757>Ms M S Karthika Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/117871>Prof Saswati Mukherjee</a><br>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Data Warehousing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117767>Dr Y Nancy Jane</a><br>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117864>Dr S Sendhilkumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Database Concepts</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117867>Dr K Kulithungan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Database Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117750>Dr S Renugadevi</a><br>
+            <a href=https://annauniv.irins.org/profile/117757>Ms M S Karthika Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/118036>Prof H Khanna Nehemiah</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Databases</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117755>Prof D Manjula</a><br>
+            <a href=https://annauniv.irins.org/profile/117760>Dr C Valliyammai</a><br>
+            <a href=https://annauniv.irins.org/profile/117868>Prof S Swamynathan</a><br>
+            <a href=https://annauniv.irins.org/profile/117876>Dr M Vijayalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>DBMS</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117872>Dr P Geetha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Decision Support System</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57359>Prof Ramesh Babu Thangavelu</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Deep Learning</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117747>Dr P Uma Maheswari</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Design of Transmission Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57434>Prof K Shanmuga Sundaram</a><br>
+            <a href=https://annauniv.irins.org/profile/117938>Dr S Ragavananthan</a><br>
+            <a href=https://annauniv.irins.org/profile/118016>Ms S Rashia Begum</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Digital Architecture</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117690>Mr S Saravanan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Digital Communication</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117801>Prof A Bhagyaveni</a><br>
+            <a href=https://annauniv.irins.org/profile/117823>Prof P V Ramakrishna</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Digital Communication and RF System Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117823>Prof P V Ramakrishna</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Digital Signal and Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117800>Prof Y V Ramana Rao</a><br>
+            <a href=https://annauniv.irins.org/profile/117822>Mr K Praveen</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Digital VLSI</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117799>Mrs N Vijaya</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Distributed and Cloud Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117878>Dr Selvi Ravidran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Distributed Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117868>Prof S Swamynathan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Distributed Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117859>Dr Mala T</a><br>
+            <a href=https://annauniv.irins.org/profile/117880>Prof M R Sumalatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>DNA Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117930>Dr Anbarasu Sivalingam</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Drives</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117771>Prof S Hosimin Thilagar</a><br>
+            <a href=https://annauniv.irins.org/profile/117787>Mr S Muthukumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117790>Mrs T Sudar Oli Selvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117793>Dr Ganesh Kumar Srinivasan</a><br>
+            <a href=https://annauniv.irins.org/profile/117794>Dr K Latha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Electrical Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117786>Prof P Valsalal</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Electrical Machines</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117771>Prof S Hosimin Thilagar</a><br>
+            <a href=https://annauniv.irins.org/profile/117773>Prof Umamaheswari Bhaskaran</a><br>
+            <a href=https://annauniv.irins.org/profile/117783>Dr A Sivaprakasam</a><br>
+            <a href=https://annauniv.irins.org/profile/117794>Dr K Latha</a><br>
+            <a href=https://annauniv.irins.org/profile/117796>Prof A Kavitha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Electrical Machines and Drives</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117771>Prof S Hosimin Thilagar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Electromagnetic Compatibility</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117806>Dr R Seetharaman</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Electromagnetics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117805>Dr M Shanmugapriya</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Electronic Nose</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117814>Dr T Jayasree</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Electronics and Communication Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/92805>Prof Dr D. Sridharan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Embedded Linux</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117791>Mr N Radhakrishnan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Embedded Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117738>Dr S Sudha</a><br>
+            <a href=https://annauniv.irins.org/profile/117779>Dr K Rathnakannan</a><br>
+            <a href=https://annauniv.irins.org/profile/117785>Prof P Vanaja Ranjan</a><br>
+            <a href=https://annauniv.irins.org/profile/117792>Mrs S Uma</a><br>
+            <a href=https://annauniv.irins.org/profile/117822>Mr K Praveen</a><br>
+            <a href=https://annauniv.irins.org/profile/117867>Dr K Kulithungan</a><br>
+            <a href=https://annauniv.irins.org/profile/117886>Dr S Umamaheswari</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>EMI/EMC</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117810>Prof K Malathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Evolutionary Algorithms</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117664>Dr Saravanan Ramasamy</a><br>
+            <a href=https://annauniv.irins.org/profile/117865>Prof R Geetha Ramani</a><br>
+            <a href=https://annauniv.irins.org/profile/117932>Prof D Arivudainambi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Evolvable Hardware</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117807>Prof P Nirmalkumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Fault Tolerant Digital Systems Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117899>Dr S Meyyappan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Fibre Optics Sensors Applications</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57353>Prof R Senthil</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Fluid Dynamics and Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117934>Dr R Akila</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Fluid Power Automation</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57431>Prof B Mohan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Fluid Power Control</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57431>Prof B Mohan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Formal Languages and Automata Theory.</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117929>Dr Baskar Babujee J</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Free and Open Source Software</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117862>Dr S Bama</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Fuzzy Logic</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117638>Dr Dhinagaran G</a><br>
+            <a href=https://annauniv.irins.org/profile/117882>Dr Radha Senthil Kumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Fuzzy Set Theory</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/22879>Prof P Vijayaraju</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>GPU Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117768>Dr B Thanasekhar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Graph Theory and Combinatorics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117931>Dr V Vijayalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Green Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117870>Dr N Thangaraj</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Grid Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117755>Prof D Manjula</a><br>
+            <a href=https://annauniv.irins.org/profile/117758>Prof S Thamarai Selvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117760>Dr C Valliyammai</a><br>
+            <a href=https://annauniv.irins.org/profile/117762>Dr Ponsy R K Sathia Bhama</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Guidance and Control</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117671>Prof K Senthilkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117675>Dr G Anitha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>HAZOP and Fault Tree Analysis</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117732>Prof N Balasubramanian</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>HCI</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117740>Dr Raghuveera T</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Health-care Intelligence and Real-time Decision Making Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117767>Dr Y Nancy Jane</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>High Voltage Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117778>Prof S Usa</a><br>
+            <a href=https://annauniv.irins.org/profile/117780>Dr V Gowri Sree</a><br>
+            <a href=https://annauniv.irins.org/profile/117781>Dr C Pugazhendhi Sugumaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Human Computer Interface</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117742>Dr K Selvamani</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>HVDC and FACTS</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117776>Prof P Somasundaram</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Hybrid LiFi/WiFi</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117759>Prof R Gunasekaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Hybrid Microgrid</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117776>Prof P Somasundaram</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57539>Prof S Shenbaga Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/57541>Dr S Nirmala Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/57542>Dr M Sasikala</a><br>
+            <a href=https://annauniv.irins.org/profile/57552>Prof S Sanjeevi</a><br>
+            <a href=https://annauniv.irins.org/profile/117649>Prof V Kumaravel</a><br>
+            <a href=https://annauniv.irins.org/profile/117650>Dr S Poonguzhali</a><br>
+            <a href=https://annauniv.irins.org/profile/117675>Dr G Anitha</a><br>
+            <a href=https://annauniv.irins.org/profile/117740>Dr Raghuveera T</a><br>
+            <a href=https://annauniv.irins.org/profile/117741>Prof Geetha Palanisamy</a><br>
+            <a href=https://annauniv.irins.org/profile/117743>Prof Mary Anita Rajam V</a><br>
+            <a href=https://annauniv.irins.org/profile/117745>Dr B L Velammal</a><br>
+            <a href=https://annauniv.irins.org/profile/117751>Dr D Shiloah Elizabeth</a><br>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+            <a href=https://annauniv.irins.org/profile/117791>Mr N Radhakrishnan</a><br>
+            <a href=https://annauniv.irins.org/profile/117800>Prof Y V Ramana Rao</a><br>
+            <a href=https://annauniv.irins.org/profile/117812>Dr C M Sujatha</a><br>
+            <a href=https://annauniv.irins.org/profile/117822>Mr K Praveen</a><br>
+            <a href=https://annauniv.irins.org/profile/117827>Dr S Vasuhi</a><br>
+            <a href=https://annauniv.irins.org/profile/117830>Prof K Bhoopathy Bagan</a><br>
+            <a href=https://annauniv.irins.org/profile/117839>Dr M Manikandan</a><br>
+            <a href=https://annauniv.irins.org/profile/117844>Dr G Kavitha</a><br>
+            <a href=https://annauniv.irins.org/profile/117845>Mrs G Sumithra</a><br>
+            <a href=https://annauniv.irins.org/profile/117846>Prof Mala John</a><br>
+            <a href=https://annauniv.irins.org/profile/117861>Dr S Abirami</a><br>
+            <a href=https://annauniv.irins.org/profile/117873>Prof S Sridhar</a><br>
+            <a href=https://annauniv.irins.org/profile/117874>Prof K Vani</a><br>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117885>Ms M Hemalatha</a><br>
+            <a href=https://annauniv.irins.org/profile/117887>Dr Dhalia Sweetlin J</a><br>
+            <a href=https://annauniv.irins.org/profile/117895>Prof S Srinivasan</a><br>
+            <a href=https://annauniv.irins.org/profile/117934>Dr R Akila</a><br>
+            <a href=https://annauniv.irins.org/profile/118036>Prof H Khanna Nehemiah</a><br>
+            <a href=https://annauniv.irins.org/profile/169024>Dr Akila R</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Image Security</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/118038>Prof R S Bhuvaneswaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Indian Knowledge System and Language Technology</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117875>Prof Ranjani Parthasarathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Industrial Instrumentation</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117897>Dr M Mythily</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Information Management</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Information Retrieval</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117739>Prof S Chitrakala</a><br>
+            <a href=https://annauniv.irins.org/profile/117747>Dr P Uma Maheswari</a><br>
+            <a href=https://annauniv.irins.org/profile/117872>Dr P Geetha</a><br>
+            <a href=https://annauniv.irins.org/profile/117882>Dr Radha Senthil Kumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Information Security</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117742>Dr K Selvamani</a><br>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+            <a href=https://annauniv.irins.org/profile/117858>Prof G V Uma</a><br>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117883>Dr B Lydia Elizabeth</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Instrumentation for Thermal Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57433>Prof N V Mahalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Intelligent Control</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117889>Prof T Thyagarajan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Inter Domain Routing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117863>Dr K Vidya</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Internet Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117769>Dr P Pabitha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Internet of Things</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/97757>Dr Rajesh G</a><br>
+            <a href=https://annauniv.irins.org/profile/117815>Prof V Jeyalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117867>Dr K Kulithungan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Intrusion Detection System</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117884>Dr P Kola Sujatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>IoT Solutions</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117747>Dr P Uma Maheswari</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>JAVA</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/118040>Mr Lokesh Sivanandam</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Knowledge</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117737>Dr G S Mahalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117875>Prof Ranjani Parthasarathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117907>Prof Hansa Lysander Manohar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Knowledge Management</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Knowledge Representation</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117737>Dr G S Mahalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Light-Weight Cryptography</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/18140>Prof Meenakshi M</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Linear Integrated Circuits</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117813>Dr R Sittalatchoumy</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>LTE</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117759>Prof R Gunasekaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>LTE-Advanced</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117759>Prof R Gunasekaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Machine Intelligence</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117769>Dr P Pabitha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Machine Learning</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/18140>Prof Meenakshi M</a><br>
+            <a href=https://annauniv.irins.org/profile/97757>Dr Rajesh G</a><br>
+            <a href=https://annauniv.irins.org/profile/117743>Prof Mary Anita Rajam V</a><br>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+            <a href=https://annauniv.irins.org/profile/117767>Dr Y Nancy Jane</a><br>
+            <a href=https://annauniv.irins.org/profile/117812>Dr C M Sujatha</a><br>
+            <a href=https://annauniv.irins.org/profile/117980>Dr P Karthikeyan</a><br>
+            <a href=https://annauniv.irins.org/profile/118035>Dr S Anbuchelian</a><br>
+            <a href=http://au-kbc.org/nlp/sobha.html>Dr L Sobha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Material Distributive Topology Based Antenna Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/18140>Prof Meenakshi M</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Measurements and Optimization</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57430>Dr Gnanavelbabu A</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Mechatronics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/36613>Dr S Senthil Kumaran</a><br>
+            <a href=https://annauniv.irins.org/profile/57469>Prof Karunamoorthy L</a><br>
+            <a href=https://annauniv.irins.org/profile/117636>Mr V Prasanna</a><br>
+            <a href=https://annauniv.irins.org/profile/117637>Ms S Kalaimagal</a><br>
+            <a href=https://annauniv.irins.org/profile/117980>Dr P Karthikeyan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Medical Digital Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117887>Dr Dhalia Sweetlin J</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Medical Digital Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117887>Dr Dhalia Sweetlin J</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Medical Electronics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57541>Dr S Nirmala Devi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Medical Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57539>Prof S Shenbaga Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/57541>Dr S Nirmala Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/57542>Dr M Sasikala</a><br>
+            <a href=https://annauniv.irins.org/profile/117649>Prof V Kumaravel</a><br>
+            <a href=https://annauniv.irins.org/profile/117650>Dr S Poonguzhali</a><br>
+            <a href=https://annauniv.irins.org/profile/117844>Dr G Kavitha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Medical Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57539>Prof S Shenbaga Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/57541>Dr S Nirmala Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/57542>Dr M Sasikala</a><br>
+            <a href=https://annauniv.irins.org/profile/117649>Prof V Kumaravel</a><br>
+            <a href=https://annauniv.irins.org/profile/117650>Dr S Poonguzhali</a><br>
+            <a href=https://annauniv.irins.org/profile/117844>Dr G Kavitha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Medical Imaging</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117873>Prof S Sridhar</a><br>
+            <a href=https://annauniv.irins.org/profile/117941>Prof P Aruna</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Medical Imaging</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117873>Prof S Sridhar</a><br>
+            <a href=https://annauniv.irins.org/profile/117941>Prof P Aruna</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>MEMS</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117771>Prof S Hosimin Thilagar</a><br>
+            <a href=https://annauniv.irins.org/profile/117779>Dr K Rathnakannan</a><br>
+            <a href=https://annauniv.irins.org/profile/117805>Dr M Shanmugapriya</a><br>
+            <a href=https://annauniv.irins.org/profile/117815>Prof V Jeyalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Micro Processors</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117749>Prof A P Shanthi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Micro Processors</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117749>Prof A P Shanthi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Microcontroller</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117637>Ms S Kalaimagal</a><br>
+            <a href=https://annauniv.irins.org/profile/117791>Mr N Radhakrishnan</a><br>
+            <a href=https://annauniv.irins.org/profile/117813>Dr R Sittalatchoumy</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Microcontrollers and SoC Boards</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117791>Mr N Radhakrishnan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Microgrids</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117774>Prof G Uma</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Microwave Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117810>Prof K Malathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117827>Dr S Vasuhi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Mobile and Cloud Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117876>Dr M Vijayalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Mobile Communication and Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117881>Prof Dhananjay Kumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Mobile Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117735>Prof Arul Siromoney</a><br>
+            <a href=https://annauniv.irins.org/profile/117746>Dr V Vetriselvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117766>Dr P Varalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117866>Prof P Yogesh</a><br>
+            <a href=https://annauniv.irins.org/profile/117877>Dr K Indra Ganthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117878>Dr Selvi Ravidran</a><br>
+            <a href=https://annauniv.irins.org/profile/118038>Prof R S Bhuvaneswaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Mobile Databases</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117876>Dr M Vijayalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Mobile Databases</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117876>Dr M Vijayalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Modeling and Control</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117891>Dr D Vasanthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117893>Dr D Kalpana</a><br>
+            <a href=https://annauniv.irins.org/profile/117897>Dr M Mythily</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Modeling and Control of Industrial Process</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117897>Dr M Mythily</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Modeling and Control of Process</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117891>Dr D Vasanthi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Molecular Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57543>Prof K S Easwarakumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Molecular Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57543>Prof K S Easwarakumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Motor Control</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117773>Prof Umamaheswari Bhaskaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Motor Control</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117773>Prof Umamaheswari Bhaskaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multicore Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117875>Prof Ranjani Parthasarathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multicore Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117875>Prof Ranjani Parthasarathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57543>Prof K S Easwarakumar</a><br>
+            <a href=https://annauniv.irins.org/profile/60587>Dr Baskaran Ramachandran</a><br>
+            <a href=https://annauniv.irins.org/profile/117740>Dr Raghuveera T</a><br>
+            <a href=https://annauniv.irins.org/profile/117745>Dr B L Velammal</a><br>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+            <a href=https://annauniv.irins.org/profile/117756>Prof S Bose</a><br>
+            <a href=https://annauniv.irins.org/profile/117859>Dr Mala T</a><br>
+            <a href=https://annauniv.irins.org/profile/117866>Prof P Yogesh</a><br>
+            <a href=https://annauniv.irins.org/profile/117870>Dr N Thangaraj</a><br>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia and Computer Graphics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117740>Dr Raghuveera T</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia Communication</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117866>Prof P Yogesh</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia Data Structures</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia Data Structures</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia Streaming</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117756>Prof S Bose</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimedia Technologies</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117745>Dr B L Velammal</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Multimodal Biometrics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117791>Mr N Radhakrishnan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Nano Electronics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117779>Dr K Rathnakannan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Natural Language Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117858>Prof G V Uma</a><br>
+            <a href=https://annauniv.irins.org/profile/117859>Dr Mala T</a><br>
+            <a href=https://annauniv.irins.org/profile/117861>Dr S Abirami</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Navigation Guidance and Control</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117675>Dr G Anitha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Network Planning</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117964>Dr K Pratheep Moses</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Network Security</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57543>Prof K S Easwarakumar</a><br>
+            <a href=https://annauniv.irins.org/profile/60526>Dr Kannan Arputharaj</a><br>
+            <a href=https://annauniv.irins.org/profile/117746>Dr V Vetriselvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117759>Prof R Gunasekaran</a><br>
+            <a href=https://annauniv.irins.org/profile/117763>Dr Jayashree Padmanabhan</a><br>
+            <a href=https://annauniv.irins.org/profile/117828>Dr T Subashri</a><br>
+            <a href=https://annauniv.irins.org/profile/117867>Dr K Kulithungan</a><br>
+            <a href=https://annauniv.irins.org/profile/118033>Prof Rhymend Uthariaraj V</a><br>
+            <a href=https://annauniv.irins.org/profile/118034>Dr A John Prakash</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117736>Prof S Valli</a><br>
+            <a href=https://annauniv.irins.org/profile/117742>Dr K Selvamani</a><br>
+            <a href=https://annauniv.irins.org/profile/117743>Prof Mary Anita Rajam V</a><br>
+            <a href=https://annauniv.irins.org/profile/117749>Prof A P Shanthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117756>Prof S Bose</a><br>
+            <a href=https://annauniv.irins.org/profile/117758>Prof S Thamarai Selvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117759>Prof R Gunasekaran</a><br>
+            <a href=https://annauniv.irins.org/profile/117765>Dr R Kathiroli</a><br>
+            <a href=https://annauniv.irins.org/profile/117766>Dr P Varalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117801>Prof A Bhagyaveni</a><br>
+            <a href=https://annauniv.irins.org/profile/117809>Prof V Jawahar Senthilkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117813>Dr R Sittalatchoumy</a><br>
+            <a href=https://annauniv.irins.org/profile/117815>Prof V Jeyalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117825>Prof P Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117833>Dr S Indira Gandhi</a><br>
+            <a href=https://annauniv.irins.org/profile/117863>Dr K Vidya</a><br>
+            <a href=https://annauniv.irins.org/profile/117866>Prof P Yogesh</a><br>
+            <a href=https://annauniv.irins.org/profile/117867>Dr K Kulithungan</a><br>
+            <a href=https://annauniv.irins.org/profile/117870>Dr N Thangaraj</a><br>
+            <a href=https://annauniv.irins.org/profile/117875>Prof Ranjani Parthasarathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117877>Dr K Indra Ganthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117878>Dr Selvi Ravidran</a><br>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117883>Dr B Lydia Elizabeth</a><br>
+            <a href=https://annauniv.irins.org/profile/117932>Prof D Arivudainambi</a><br>
+            <a href=https://annauniv.irins.org/profile/117986>Prof N Natchimuthu</a><br>
+            <a href=https://annauniv.irins.org/profile/118032>Prof Murugan K</a><br>
+            <a href=https://annauniv.irins.org/profile/118034>Dr A John Prakash</a><br>
+            <a href=https://annauniv.irins.org/profile/118035>Dr S Anbuchelian</a><br>
+            <a href=https://annauniv.irins.org/profile/118037>Mr Chinthamani Chinnaraju</a><br>
+            <a href=https://annauniv.irins.org/profile/118038>Prof R S Bhuvaneswaran</a><br>
+            <a href=https://annauniv.irins.org/profile/118039>Dr D George Washington</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Neural Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117749>Prof A P Shanthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117758>Prof S Thamarai Selvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Neural Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117749>Prof A P Shanthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117758>Prof S Thamarai Selvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>NLP</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117737>Dr G S Mahalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117755>Prof D Manjula</a><br>
+            <a href=http://au-kbc.org/nlp/sobha.html>Dr L Sobha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Non Linear Dynamics in Power Converters</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117796>Prof A Kavitha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Non Linear Dynamics of PE Circuits</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117774>Prof G Uma</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Non Linear Signal Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117816>Prof O Uma Maheswari</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Object Oriented Methodologies</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117877>Dr K Indra Ganthi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Object Oriented Programming</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/36617>Dr T P Saravanabava</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Object Oriented System Development</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117748>Dr P Velvizhy</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Object Technologies</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117763>Dr Jayashree Padmanabhan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Operating System Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117871>Prof Saswati Mukherjee</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Optical Communication</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/18140>Prof Meenakshi M</a><br>
+            <a href=https://annauniv.irins.org/profile/117805>Dr M Shanmugapriya</a><br>
+            <a href=https://annauniv.irins.org/profile/117821>Dr G Geetha</a><br>
+            <a href=https://annauniv.irins.org/profile/117831>Dr Piramasubramanian S</a><br>
+            <a href=https://annauniv.irins.org/profile/117841>Prof M Ganesh Madhan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Optical Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117833>Dr S Indira Gandhi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Optical Signal Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117838>Dr P Prakash</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Opto-Mechatronic System Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117832>Dr V Sathiesh Kumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Opto-Mechatronic System Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117832>Dr V Sathiesh Kumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>P2P</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Parallel Architectures</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117836>Mrs C Sridevi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Parallel Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117736>Prof S Valli</a><br>
+            <a href=https://annauniv.irins.org/profile/117755>Prof D Manjula</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Pattern Recognition</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117741>Prof Geetha Palanisamy</a><br>
+            <a href=https://annauniv.irins.org/profile/117747>Dr P Uma Maheswari</a><br>
+            <a href=https://annauniv.irins.org/profile/117846>Prof Mala John</a><br>
+            <a href=https://annauniv.irins.org/profile/117885>Ms M Hemalatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Planar Transmission Lines</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117810>Prof K Malathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Planar Transmission Lines</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117810>Prof K Malathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power Electronic Drives</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117787>Mr S Muthukumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power Electronics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117774>Prof G Uma</a><br>
+            <a href=https://annauniv.irins.org/profile/117783>Dr A Sivaprakasam</a><br>
+            <a href=https://annauniv.irins.org/profile/117790>Mrs T Sudar Oli Selvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117793>Dr Ganesh Kumar Srinivasan</a><br>
+            <a href=https://annauniv.irins.org/profile/117794>Dr K Latha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power Electronics and Drives</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117790>Mrs T Sudar Oli Selvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117793>Dr Ganesh Kumar Srinivasan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power Optimization</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117815>Prof V Jeyalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power Plant consultancy</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/36622>Prof R Sethumadhavan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power Plant Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/24179>Prof E Natarajan</a><br>
+            <a href=https://annauniv.irins.org/profile/117985>Mr V Kumaresan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power Quality</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117774>Prof G Uma</a><br>
+            <a href=https://annauniv.irins.org/profile/117777>Dr C Sharmeela</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power Syetem Stability</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117775>Prof P Lakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power System Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117797>Prof S Chandramohan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117772>Prof V Senthilkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117776>Prof P Somasundaram</a><br>
+            <a href=https://annauniv.irins.org/profile/117777>Dr C Sharmeela</a><br>
+            <a href=https://annauniv.irins.org/profile/117784>Prof R Ramesh</a><br>
+            <a href=https://annauniv.irins.org/profile/117788>Dr V Gomathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117789>Prof R P Kumudini Devi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power systems Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117782>Dr S V Anbuselvi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Power Systems Operation and Control</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117788>Dr V Gomathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Printed Electronics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117969>Dr Kanchana M</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Process Control</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117775>Prof P Lakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117890>Prof D Manamalli</a><br>
+            <a href=https://annauniv.irins.org/profile/117898>Dr A Ganesh Ram</a><br>
+            <a href=https://annauniv.irins.org/profile/117901>Dr M Vijayakarthick</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Process Modeling and Simulation Chemical and Catalytic Reaction Engineering Combustion</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117729>Ms C N Pratheeba</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Programming Languages and Algorithms</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117876>Dr M Vijayalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Programming Models</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117768>Dr B Thanasekhar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Quantum computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117763>Dr Jayashree Padmanabhan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Queueing Models</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117930>Dr Anbarasu Sivalingam</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Queueing Network Models</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/22643>Prof B Krishnakumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Queueing Thoery</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117932>Prof D Arivudainambi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Real time Embedded System</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117820>Dr S Ewins Pon Pushpa</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Real Time Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117738>Dr S Sudha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Recommendation Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117748>Dr P Velvizhy</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Reconfigurable Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117779>Dr K Rathnakannan</a><br>
+            <a href=https://annauniv.irins.org/profile/117807>Prof P Nirmalkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117875>Prof Ranjani Parthasarathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>RF and Optical Communication</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117841>Prof M Ganesh Madhan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>RF and Optical Engineeering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117835>Dr Rimmya C</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>RF Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117831>Dr Piramasubramanian S</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>RF Microwave Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117827>Dr S Vasuhi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>RF System Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117821>Dr G Geetha</a><br>
+            <a href=https://annauniv.irins.org/profile/117823>Prof P V Ramakrishna</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Robotics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/36608>Prof T V Moorthy</a><br>
+            <a href=https://annauniv.irins.org/profile/57379>Prof T Ramesh Babu</a><br>
+            <a href=https://annauniv.irins.org/profile/117637>Ms S Kalaimagal</a><br>
+            <a href=https://annauniv.irins.org/profile/117857>Dr K Padmanabhan Panchu</a><br>
+            <a href=https://annauniv.irins.org/profile/117879>Prof P AnandhaKumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117913>Prof Hariharan P</a><br>
+            <a href=https://annauniv.irins.org/profile/117974>Prof R Sivaramakrishnan</a><br>
+            <a href=https://annauniv.irins.org/profile/117980>Dr P Karthikeyan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Robotics Decision Support and Expert Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57379>Prof T Ramesh Babu</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Robust control Applications</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117798>Prof Sanjib Kumar Patanaik</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Satellite Image Processing and GIS Hyperspectral Remote Sensing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57552>Prof S Sanjeevi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Scheduling</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57376>Prof T Paul Robert</a><br>
+            <a href=https://annauniv.irins.org/profile/57384>Dr R Baskaran</a><br>
+            <a href=https://annauniv.irins.org/profile/117762>Dr Ponsy R K Sathia Bhama</a><br>
+            <a href=https://annauniv.irins.org/profile/117857>Dr K Padmanabhan Panchu</a><br>
+            <a href=https://annauniv.irins.org/profile/117914>Dr M Omkumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Scheduling in Grid Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117762>Dr Ponsy R K Sathia Bhama</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Security</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57543>Prof K S Easwarakumar</a><br>
+            <a href=https://annauniv.irins.org/profile/60526>Dr Kannan Arputharaj</a><br>
+            <a href=https://annauniv.irins.org/profile/117742>Dr K Selvamani</a><br>
+            <a href=https://annauniv.irins.org/profile/117743>Prof Mary Anita Rajam V</a><br>
+            <a href=https://annauniv.irins.org/profile/117746>Dr V Vetriselvi</a><br>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+            <a href=https://annauniv.irins.org/profile/117759>Prof R Gunasekaran</a><br>
+            <a href=https://annauniv.irins.org/profile/117761>Dr S Neelavathy Pari</a><br>
+            <a href=https://annauniv.irins.org/profile/117763>Dr Jayashree Padmanabhan</a><br>
+            <a href=https://annauniv.irins.org/profile/117765>Dr R Kathiroli</a><br>
+            <a href=https://annauniv.irins.org/profile/117766>Dr P Varalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117828>Dr T Subashri</a><br>
+            <a href=https://annauniv.irins.org/profile/117839>Dr M Manikandan</a><br>
+            <a href=https://annauniv.irins.org/profile/117858>Prof G V Uma</a><br>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117863>Dr K Vidya</a><br>
+            <a href=https://annauniv.irins.org/profile/117867>Dr K Kulithungan</a><br>
+            <a href=https://annauniv.irins.org/profile/117869>Dr E Uma</a><br>
+            <a href=https://annauniv.irins.org/profile/117880>Prof M R Sumalatha</a><br>
+            <a href=https://annauniv.irins.org/profile/117883>Dr B Lydia Elizabeth</a><br>
+            <a href=https://annauniv.irins.org/profile/117888>Dr D Sangeetha</a><br>
+            <a href=https://annauniv.irins.org/profile/118033>Prof Rhymend Uthariaraj V</a><br>
+            <a href=https://annauniv.irins.org/profile/118034>Dr A John Prakash</a><br>
+            <a href=https://annauniv.irins.org/profile/118038>Prof R S Bhuvaneswaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Security in Inter Domain Routing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117863>Dr K Vidya</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Security in Mobile Adhoc Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117765>Dr R Kathiroli</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Security in Wireless Network</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117761>Dr S Neelavathy Pari</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Semantic Web</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117769>Dr P Pabitha</a><br>
+            <a href=https://annauniv.irins.org/profile/117864>Dr S Sendhilkumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Sensor Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117766>Dr P Varalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117801>Prof A Bhagyaveni</a><br>
+            <a href=https://annauniv.irins.org/profile/117813>Dr R Sittalatchoumy</a><br>
+            <a href=https://annauniv.irins.org/profile/117815>Prof V Jeyalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117867>Dr K Kulithungan</a><br>
+            <a href=https://annauniv.irins.org/profile/117877>Dr K Indra Ganthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117878>Dr Selvi Ravidran</a><br>
+            <a href=https://annauniv.irins.org/profile/117932>Prof D Arivudainambi</a><br>
+            <a href=https://annauniv.irins.org/profile/118035>Dr S Anbuchelian</a><br>
+            <a href=https://annauniv.irins.org/profile/118038>Prof R S Bhuvaneswaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Service Oriented Architecture</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117788>Dr V Gomathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117869>Dr E Uma</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Signal Integrity in High Speed Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117810>Prof K Malathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Signal Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57539>Prof S Shenbaga Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/57542>Dr M Sasikala</a><br>
+            <a href=https://annauniv.irins.org/profile/117649>Prof V Kumaravel</a><br>
+            <a href=https://annauniv.irins.org/profile/117751>Dr D Shiloah Elizabeth</a><br>
+            <a href=https://annauniv.irins.org/profile/117785>Prof P Vanaja Ranjan</a><br>
+            <a href=https://annauniv.irins.org/profile/117816>Prof O Uma Maheswari</a><br>
+            <a href=https://annauniv.irins.org/profile/117830>Prof K Bhoopathy Bagan</a><br>
+            <a href=https://annauniv.irins.org/profile/117834>Dr K Mariammal</a><br>
+            <a href=https://annauniv.irins.org/profile/117838>Dr P Prakash</a><br>
+            <a href=https://annauniv.irins.org/profile/117846>Prof Mala John</a><br>
+            <a href=https://annauniv.irins.org/profile/117874>Prof K Vani</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Social Platforms</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117880>Prof M R Sumalatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Soft Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/29943>Prof L Suganthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117767>Dr Y Nancy Jane</a><br>
+            <a href=https://annauniv.irins.org/profile/117775>Prof P Lakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117884>Dr P Kola Sujatha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Soft Sensing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117900>Dr S Kumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Software Engineering</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/60526>Dr Kannan Arputharaj</a><br>
+            <a href=https://annauniv.irins.org/profile/97757>Dr Rajesh G</a><br>
+            <a href=https://annauniv.irins.org/profile/117735>Prof Arul Siromoney</a><br>
+            <a href=https://annauniv.irins.org/profile/117744>Dr Angelin Gladston</a><br>
+            <a href=https://annauniv.irins.org/profile/117747>Dr P Uma Maheswari</a><br>
+            <a href=https://annauniv.irins.org/profile/117769>Dr P Pabitha</a><br>
+            <a href=https://annauniv.irins.org/profile/117858>Prof G V Uma</a><br>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/118036>Prof H Khanna Nehemiah</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Software Project Management</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Software Quality Assurance</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117858>Prof G V Uma</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Software Testing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117858>Prof G V Uma</a><br>
+            <a href=https://annauniv.irins.org/profile/117860>Prof J Indumathi</a><br>
+            <a href=https://annauniv.irins.org/profile/117869>Dr E Uma</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Special Electrical Machines</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117796>Prof A Kavitha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Spectroscopy</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117942>Dr G J Bhagavathiammal</a><br>
+            <a href=https://annauniv.irins.org/profile/117954>Dr G Velraj</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Switching Mode Power Supply</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117787>Mr S Muthukumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Text Analytics</td>
+        <td>
+            <a href=http://au-kbc.org/nlp/sobha.html>Dr L Sobha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Text Mining</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117755>Prof D Manjula</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Theoretical Computer Science</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/57543>Prof K S Easwarakumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117930>Dr Anbarasu Sivalingam</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Theory of Computation</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117766>Dr P Varalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>User Interface Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117869>Dr E Uma</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>UWB in WBAN Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/18140>Prof Meenakshi M</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Vehicular Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117759>Prof R Gunasekaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Video Analytics</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117861>Dr S Abirami</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Video and Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117740>Dr Raghuveera T</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Video Image Processing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117754>Dr Arockia Xavier Annie R</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Video Streaming and Analysis</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117881>Prof Dhananjay Kumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>VLSI</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117738>Dr S Sudha</a><br>
+            <a href=https://annauniv.irins.org/profile/117779>Dr K Rathnakannan</a><br>
+            <a href=https://annauniv.irins.org/profile/117799>Mrs N Vijaya</a><br>
+            <a href=https://annauniv.irins.org/profile/117802>Prof N Ramadass</a><br>
+            <a href=https://annauniv.irins.org/profile/117804>Dr J Kamala</a><br>
+            <a href=https://annauniv.irins.org/profile/117807>Prof P Nirmalkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117808>Dr J Dhurga Devi</a><br>
+            <a href=https://annauniv.irins.org/profile/117809>Prof V Jawahar Senthilkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117815>Prof V Jeyalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117817>Prof P Sakthivel</a><br>
+            <a href=https://annauniv.irins.org/profile/117823>Prof P V Ramakrishna</a><br>
+            <a href=https://annauniv.irins.org/profile/117826>Dr S P Joy Vasantha Rani</a><br>
+            <a href=https://annauniv.irins.org/profile/117834>Dr K Mariammal</a><br>
+            <a href=https://annauniv.irins.org/profile/117837>Dr D Meganathan</a><br>
+            <a href=https://annauniv.irins.org/profile/117843>Prof M Kannan</a><br>
+            <a href=https://annauniv.irins.org/profile/117886>Dr S Umamaheswari</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>VLSI and Networking</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117843>Prof M Kannan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>VLSI and Networking</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117843>Prof M Kannan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Vlsi Computing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117839>Dr M Manikandan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>VLSI Design</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117738>Dr S Sudha</a><br>
+            <a href=https://annauniv.irins.org/profile/117802>Prof N Ramadass</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>VLSI Design and Reconfigurable Systems</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117802>Prof N Ramadass</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>VLSI for Wireless Communication</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117807>Prof P Nirmalkumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>VLSI for Wireless Communication</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117807>Prof P Nirmalkumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>VLSI Systems and Electronic Design Automation</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117817>Prof P Sakthivel</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>VLSI Testing</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117815>Prof V Jeyalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Web Design and Management</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117867>Dr K Kulithungan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Web Information Retrieval</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117882>Dr Radha Senthil Kumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Web Mining</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117864>Dr S Sendhilkumar</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Web Services</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117869>Dr E Uma</a><br>
+            <a href=https://annauniv.irins.org/profile/117888>Dr D Sangeetha</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Web Technology</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117756>Prof S Bose</a><br>
+            <a href=https://annauniv.irins.org/profile/117866>Prof P Yogesh</a><br>
+            <a href=https://annauniv.irins.org/profile/117876>Dr M Vijayalakshmi</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Wireless Adhoc and Sensor Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117867>Dr K Kulithungan</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Wireless and Optical Communication - Physical and MAC Layer</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/18140>Prof Meenakshi M</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Wireless Communication</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/18140>Prof Meenakshi M</a><br>
+            <a href=https://annauniv.irins.org/profile/117801>Prof A Bhagyaveni</a><br>
+            <a href=https://annauniv.irins.org/profile/117803>Dr K Gunaseelan</a><br>
+            <a href=https://annauniv.irins.org/profile/117807>Prof P Nirmalkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117818>Dr T Manimekalai</a><br>
+            <a href=https://annauniv.irins.org/profile/117829>Prof P T V Bhuvaneswari</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Wireless Communication</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/18140>Prof Meenakshi M</a><br>
+            <a href=https://annauniv.irins.org/profile/117801>Prof A Bhagyaveni</a><br>
+            <a href=https://annauniv.irins.org/profile/117803>Dr K Gunaseelan</a><br>
+            <a href=https://annauniv.irins.org/profile/117807>Prof P Nirmalkumar</a><br>
+            <a href=https://annauniv.irins.org/profile/117818>Dr T Manimekalai</a><br>
+            <a href=https://annauniv.irins.org/profile/117829>Prof P T V Bhuvaneswari</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Wireless Communication and Networking</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117801>Prof A Bhagyaveni</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Wireless Network</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117759>Prof R Gunasekaran</a><br>
+            <a href=https://annauniv.irins.org/profile/117761>Dr S Neelavathy Pari</a><br>
+            <a href=https://annauniv.irins.org/profile/117829>Prof P T V Bhuvaneswari</a><br>
+            <a href=https://annauniv.irins.org/profile/117863>Dr K Vidya</a><br>
+            <a href=https://annauniv.irins.org/profile/118032>Prof Murugan K</a><br>
+            <a href=https://annauniv.irins.org/profile/118037>Mr Chinthamani Chinnaraju</a><br>
+            <a href=https://annauniv.irins.org/profile/118039>Dr D George Washington</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Wireless Network Security</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117759>Prof R Gunasekaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Wireless Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117863>Dr K Vidya</a><br>
+            <a href=https://annauniv.irins.org/profile/118032>Prof Murugan K</a><br>
+            <a href=https://annauniv.irins.org/profile/118037>Mr Chinthamani Chinnaraju</a><br>
+            <a href=https://annauniv.irins.org/profile/118039>Dr D George Washington</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Wireless Sensor Network</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117766>Dr P Varalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117770>Dr Jayachitra V P</a><br>
+            <a href=https://annauniv.irins.org/profile/117801>Prof A Bhagyaveni</a><br>
+            <a href=https://annauniv.irins.org/profile/117813>Dr R Sittalatchoumy</a><br>
+            <a href=https://annauniv.irins.org/profile/117815>Prof V Jeyalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117829>Prof P T V Bhuvaneswari</a><br>
+            <a href=https://annauniv.irins.org/profile/117877>Dr K Indra Ganthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117932>Prof D Arivudainambi</a><br>
+            <a href=https://annauniv.irins.org/profile/118035>Dr S Anbuchelian</a><br>
+            <a href=https://annauniv.irins.org/profile/118038>Prof R S Bhuvaneswaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>Wireless Sensor Networks</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117766>Dr P Varalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117801>Prof A Bhagyaveni</a><br>
+            <a href=https://annauniv.irins.org/profile/117813>Dr R Sittalatchoumy</a><br>
+            <a href=https://annauniv.irins.org/profile/117815>Prof V Jeyalakshmi</a><br>
+            <a href=https://annauniv.irins.org/profile/117877>Dr K Indra Ganthi</a><br>
+            <a href=https://annauniv.irins.org/profile/117932>Prof D Arivudainambi</a><br>
+            <a href=https://annauniv.irins.org/profile/118035>Dr S Anbuchelian</a><br>
+            <a href=https://annauniv.irins.org/profile/118038>Prof R S Bhuvaneswaran</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>XML and Web Services Security</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117869>Dr E Uma</a><br>
+        </td>
+        </tr>
+        <tr>
+        <td>XML Technology</td>
+        <td>
+            <a href=https://annauniv.irins.org/profile/117882>Dr Radha Senthil Kumar</a><br>
+        </td>
+        </tr>
+        
+    </table>
+    <script data-config>
+
+    
+function filter(evt) {
+
+//   var abbr = {};
+//   abbr["AI"] = "artificial intelligence";
+//   abbr["NLP"] = "Natural Language Processing";
+//   abbr['stem cells'] = "Stem Cell";
+//   abbr['sea'] = " sea ";
+//   abbr['press'] = " press";
+//   abbr['waste water'] = "wastewater";
+//   abbr['wastewater'] = "wastewater";
+
+    //   var frm = document.forms[0];
+    //   //var slcCols = frm.slcColumns;
+    //   //var slcOperators = frm.slcOperators;
+    //   var slcOperators = "*";
+    //   //console.log(slcOperators.value)
+    //   var inp = frm.inpSearch;
+    //   var inpv = inp.value;
+    //   //console.log(inpv)
+    //   if(abbr[inpv] && (slcOperators == "*"))
+    //     var query = slcOperators + abbr[inpv];
+    //   else
+    //     var query = slcOperators  + inpv;
+    //   //console.log(query);
+
+    //   // Set the column's filter value
+    //   tf.setFilterValue(0, query);
+
+    //   // Filter the table
+    //   tf.filter();
+
+    //   // Prevent form submission
+    //   evt.preventDefault();
+    }
+
+    var filtersConfig = {
+      base_path: 'tablefilter/',
+      highlight_keywords: true,
+      single_filter: {
+        exclude_cols: [1],
+        css_class: 'form-control',
+      },
+      //help_instructions: true,
+      filters_row_index: 1,
+      state: false,
+      alternate_rows: true,
+      msg_filter: 'Search...',
+      no_results_message: {
+        content: 'The term you entered does not correspond to a research area in Anna University as per our database',
+      },
+      extensions:[ // Extensions load addititional script files
+      {
+            name: 'filtersVisibility',
+            visible_at_start: false,
+            target_id: 'filtersToggle',
+            btn_html: '<button>Toggle filters<\/button>'
+        },
+        { name: 'sort' } // Sort requires to classify numeric columns using "col_types : [ 'numeric', String', ...],"
+      ],
+    };
+    var tf = new TableFilter(document.querySelector('.aoi-table'),filtersConfig);
+    tf.init();
+    //var feature = tf.feature('dropdown');
+    //feature.refreshAll();
+
+  </script>
+  </body>
+</html>
