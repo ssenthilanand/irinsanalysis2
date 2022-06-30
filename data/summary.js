@@ -101,7 +101,7 @@
         "Area": "NLP",
         "Description": "Natural Language Processing, Text Analytics, Machine Translation",
         "Code": "113",
-        "Faculty": "11",
+        "Faculty": "10",
         "Category": "E"
     }
 ]
