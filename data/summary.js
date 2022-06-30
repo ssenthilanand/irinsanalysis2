@@ -3,41 +3,34 @@
         "Area": "Software",
         "Description": "Computing, Algorithms, Software, Databases",
         "Code": "111",
-        "Faculty": "52",
+        "Faculty": "50",
         "Category": "E"
     },
     {
         "Area": "Signal Processing",
         "Description": "Signal Processing, Image Processing, Pattern Recognition",
         "Code": "105",
-        "Faculty": "46",
+        "Faculty": "44",
         "Category": "E"
     },
     {
         "Area": "AI",
         "Description": "Artificial Intelligence, Machine Learning, Data Mining, Big Data Analytics",
         "Code": "114",
-        "Faculty": "46",
-        "Category": "E"
-    },
-    {
-        "Area": "Automation",
-        "Description": "Sensors, Instrumentation, Control and Automation",
-        "Code": "104",
-        "Faculty": "43",
+        "Faculty": "44",
         "Category": "E"
     },
     {
         "Area": "Networking",
         "Description": "Networks and Networking , other than Wireless and Security",
         "Code": "109",
-        "Faculty": "43",
+        "Faculty": "41",
         "Category": "E"
     },
     {
-        "Area": "Communications",
-        "Description": "Communications, Satellite Communication, Multimedia, RF, Antennas",
-        "Code": "106",
+        "Area": "Automation",
+        "Description": "Sensors, Instrumentation, Control and Automation",
+        "Code": "104",
         "Faculty": "35",
         "Category": "E"
     },
@@ -45,6 +38,13 @@
         "Area": "Electronics",
         "Description": "Electronics, Power Electronics, Medical Electronics, Mechatronics",
         "Code": "103",
+        "Faculty": "33",
+        "Category": "E"
+    },
+    {
+        "Area": "Communications",
+        "Description": "Communications, Satellite Communication, Multimedia, RF, Antennas",
+        "Code": "106",
         "Faculty": "33",
         "Category": "E"
     },
@@ -66,21 +66,14 @@
         "Area": "Electrical Power",
         "Description": "High Voltage/ Power Engg., Power Transmission, Electrical Motors and Machines",
         "Code": "101",
-        "Faculty": "25",
+        "Faculty": "24",
         "Category": "E"
     },
     {
         "Area": "Internet",
         "Description": "The Web, Cloud and Grid Computing",
         "Code": "112",
-        "Faculty": "24",
-        "Category": "E"
-    },
-    {
-        "Area": "Circuit Design",
-        "Description": "Circuits - Analog and Digital, Chip Design, VLSI",
-        "Code": "102",
-        "Faculty": "19",
+        "Faculty": "22",
         "Category": "E"
     },
     {
@@ -88,6 +81,13 @@
         "Description": "Computer Hardware and Architecture",
         "Code": "110",
         "Faculty": "18",
+        "Category": "E"
+    },
+    {
+        "Area": "Circuit Design",
+        "Description": "Circuits - Analog and Digital, Chip Design, VLSI",
+        "Code": "102",
+        "Faculty": "17",
         "Category": "E"
     },
     {
@@ -101,7 +101,7 @@
         "Area": "NLP",
         "Description": "Natural Language Processing, Text Analytics, Machine Translation",
         "Code": "113",
-        "Faculty": "12",
+        "Faculty": "11",
         "Category": "E"
     }
 ]
