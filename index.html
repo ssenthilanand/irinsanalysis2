@@ -1,208 +1,204 @@
 <!DOCTYPE html>
 <html class="element" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta lang="en" />
-    <meta
-      name="description"
-      content="Analysis of Anna University IRINS data."
-    />
-    <meta name="viewport" content="initial-scale=1 width=device-width" />
-    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
-    <link rel="stylesheet" href="css/sakura.css" />
-    <title>
+
+<head>
+  <meta charset="utf-8" />
+  <meta lang="en" />
+  <meta name="description" content="Analysis of Anna University IRINS data." />
+  <meta name="viewport" content="initial-scale=1 width=device-width" />
+  <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+  <link rel="stylesheet" href="css/sakura.css" />
+  <title>
+    Major Areas of R&D Specialisation in Anna University - Domain of
+    Electrical, Information and Computing Sciences (EIC)
+  </title>
+</head>
+
+<body>
+  <script src="./data/summary.js"></script>
+  <script>
+    let drawMode = "linear";
+    // const colours = {
+    //   E: "#813762",
+    //   M: "#905e00",
+    //   N: "#003f5c",
+    // };
+
+    function getColor(category) {
+      if (category == "E") {
+        return "#813762";
+      } else if (category == "M") {
+        return "#905e00";
+      } else if (category == "N") {
+        return "#003f5c";
+      }
+    }
+
+    function getCircleInfo(code) {
+      summary.forEach((circle) => {
+        if (circle["Code"] == code) {
+          result = circle;
+        }
+      });
+      return result;
+    }
+
+    function getCircleRadius(code) {
+      circle = getCircleInfo(code);
+      number = circle["Faculty"];
+      if (drawMode == "log") {
+        radius = Math.round(Math.log10(parseInt(number)) * 40 + 20);
+      } else if (drawMode == "linear") {
+        radius = parseInt(number) + 60;
+      }
+      return radius;
+    }
+
+    function calcParentId(code) {
+      circle = getCircleInfo(code);
+      number = circle["Faculty"];
+      if (number <= 20) {
+        parentId = "01_to_20";
+      } else if (number > 21 && number <= 40) {
+        parentId = "21_to_40";
+      } else if (number > 40) {
+        parentId = "40_to_inf";
+      }
+      return parentId;
+    }
+
+    function drawCircle(code) {
+      circle = getCircleInfo(code);
+      radius = getCircleRadius(code);
+      div_id = calcParentId(code);
+
+      var svg1 = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "svg"
+      );
+      svg1.setAttribute("height", radius * 2);
+      svg1.setAttribute("width", radius * 2);
+
+      document.getElementById(div_id).appendChild(svg1);
+
+      var title = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "title"
+      );
+      title.textContent = circle["Description"];
+
+      var circles = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "circle"
+      );
+      circles.setAttribute("cx", radius);
+      circles.setAttribute("cy", radius);
+      circles.setAttribute("r", radius - 2);
+      circles.setAttribute("stroke", "black");
+      circles.setAttribute("stroke-width", 2);
+      circles.setAttribute("fill", getColor(circle["Category"]));
+
+      var areaText = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "text"
+      );
+      areaText.textContent = circle["Area"];
+      areaText.setAttribute("x", "50%");
+      areaText.setAttribute("y", "40%");
+      areaText.setAttribute("text-anchor", "middle");
+      areaText.setAttribute("fill", "#fff");
+      areaText.setAttribute("dy", ".3em");
+
+      var numberText = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "text"
+      );
+      numberText.textContent = "(" + circle["Faculty"] + ")";
+      numberText.setAttribute("x", "50%");
+      numberText.setAttribute("y", "60%");
+      numberText.setAttribute("text-anchor", "middle");
+      numberText.setAttribute("fill", "#fff");
+      numberText.setAttribute("dy", ".3em");
+
+      page = "areas/" + code + ".html";
+      var link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+      link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", page);
+
+      link.appendChild(circles);
+      link.appendChild(title);
+      link.appendChild(areaText);
+      link.appendChild(numberText);
+      svg1.appendChild(link);
+    }
+  </script>
+  <header style="text-align: center">
+    <h2>
       Major Areas of R&D Specialisation in Anna University - Domain of
       Electrical, Information and Computing Sciences (EIC)
-    </title>
-  </head>
-
-  <body>
-    <script src="./data/summary.js"></script>
-    <script>
-      let drawMode = "linear";
-      // const colours = {
-      //   E: "#813762",
-      //   M: "#905e00",
-      //   N: "#003f5c",
-      // };
-
-      function getColor(category) {
-        if (category == "E") {
-          return "#813762";
-        } else if (category == "M") {
-          return "#905e00";
-        } else if (category == "N") {
-          return "#003f5c";
-        }
-      }
-
-      function getCircleInfo(code) {
-        summary.forEach((circle) => {
-          if (circle["Code"] == code) {
-            result = circle;
-          }
-        });
-        return result;
-      }
-
-      function getCircleRadius(code) {
-        circle = getCircleInfo(code);
-        number = circle["Faculty"];
-        if (drawMode == "log") {
-          radius = Math.round(Math.log10(parseInt(number)) * 40 + 20);
-        } else if (drawMode == "linear") {
-          radius = parseInt(number) + 60;
-        }
-        return radius;
-      }
-
-      function calcParentId(code) {
-        circle = getCircleInfo(code);
-        number = circle["Faculty"];
-        if (number <= 20) {
-          parentId = "01_to_20";
-        } else if (number > 21 && number <= 40) {
-          parentId = "21_to_40";
-        } else if (number > 40) {
-          parentId = "40_to_inf";
-        }
-        return parentId;
-      }
-
-      function drawCircle(code) {
-        circle = getCircleInfo(code);
-        radius = getCircleRadius(code);
-        div_id = calcParentId(code);
-
-        var svg1 = document.createElementNS(
-          "http://www.w3.org/2000/svg",
-          "svg"
-        );
-        svg1.setAttribute("height", radius * 2);
-        svg1.setAttribute("width", radius * 2);
-
-        document.getElementById(div_id).appendChild(svg1);
-
-        var title = document.createElementNS(
-          "http://www.w3.org/2000/svg",
-          "title"
-        );
-        title.textContent = circle["Description"];
-
-        var circles = document.createElementNS(
-          "http://www.w3.org/2000/svg",
-          "circle"
-        );
-        circles.setAttribute("cx", radius);
-        circles.setAttribute("cy", radius);
-        circles.setAttribute("r", radius - 2);
-        circles.setAttribute("stroke", "black");
-        circles.setAttribute("stroke-width", 2);
-        circles.setAttribute("fill", getColor(circle["Category"]));
-
-        var areaText = document.createElementNS(
-          "http://www.w3.org/2000/svg",
-          "text"
-        );
-        areaText.textContent = circle["Area"];
-        areaText.setAttribute("x", "50%");
-        areaText.setAttribute("y", "40%");
-        areaText.setAttribute("text-anchor", "middle");
-        areaText.setAttribute("fill", "#fff");
-        areaText.setAttribute("dy", ".3em");
-
-        var numberText = document.createElementNS(
-          "http://www.w3.org/2000/svg",
-          "text"
-        );
-        numberText.textContent = "(" + circle["Faculty"] + ")";
-        numberText.setAttribute("x", "50%");
-        numberText.setAttribute("y", "60%");
-        numberText.setAttribute("text-anchor", "middle");
-        numberText.setAttribute("fill", "#fff");
-        numberText.setAttribute("dy", ".3em");
-
-        page = "areas/" + code + ".html";
-        var link = document.createElementNS("http://www.w3.org/2000/svg", "a");
-        link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", page);
-
-        link.appendChild(circles);
-        link.appendChild(title);
-        link.appendChild(areaText);
-        link.appendChild(numberText);
-        svg1.appendChild(link);
-      }
-    </script>
-    <header style="text-align: center">
-      <h2>
-        Major Areas of R&D Specialisation in Anna University - Domain of
-        Electrical, Information and Computing Sciences (EIC)
-      </h2>
-      <strong
-        >Ranking of the Areas (Clusters) based on faculty strength.</strong
-      >
-      <br />
-    </header>
+    </h2>
+    <strong>Ranking of the Areas (Clusters) based on faculty strength.</strong>
     <br />
-    <p style="text-align: center">
-      Numbers on the circles are the number of faculty members involved in that
-      R&D Cluster.
-    </p>
-    <p style="text-align: center">
-      Move the cursor over the circle for more details of the areas covered in
-      it.
-    </p>
-    <p style="text-align: center">
-      Click on the circles to see the Topics and Faculty Members involved in
-      that Cluster.
-    </p>
+  </header>
+  <br />
+  <p style="text-align: center">
+    Numbers on the circles are the number of faculty members involved in that
+    R&D Cluster.
+  </p>
+  <p style="text-align: center">
+    Move the cursor over the circle for more details of the areas covered in
+    it.
+  </p>
+  <p style="text-align: center">
+    Click on the circles to see the Topics and Faculty Members involved in
+    that Cluster.
+  </p>
 
-    <br />
+  <br />
 
-    <div class="row" style="text-align: center">
-      <a href="facsearch.html"> To Faculty Search</a>
-    </div>
-    <div class="row" style="text-align: center">
-      <a href="search.html"> To Topics Search</a>
-    </div>
-    <br />
-    <div style="text-align: center">
-      <fieldset id="40_to_inf">
-        <legend style="text-align: left">More than 40 faculty</legend>
-        <script>
-          drawCircle(111);
-          drawCircle(105);
-          drawCircle(114);
-          drawCircle(104);
-          drawCircle(109);
-        </script>
-      </fieldset>
-      <fieldset id="21_to_40">
-        <legend style="text-align: left">21 to 40 faculty</legend>
-        <script>
-          drawCircle(106);
-          drawCircle(103);
-          drawCircle(107);
-          drawCircle(108);
-          drawCircle(101);
-          drawCircle(112);
-        </script>
-      </fieldset>
-      <fieldset id="01_to_20">
-        <legend style="text-align: left">Upto 20 faculty</legend>
-        <script>
-          drawCircle(102);
-          drawCircle(110);
-          drawCircle(115);
-          drawCircle(113);
-        </script>
-      </fieldset>
-    </div>
-    <br />
-    <br />
-    <br />
+  <div class="row" style="text-align: center">
+    <a href="facsearch.html"> To Faculty Search</a>
+  </div>
+  <div class="row" style="text-align: center">
+    <a href="search.html"> To Topics Search</a>
+  </div>
+  <br />
+  <div style="text-align: center">
+    <fieldset id="40_to_inf">
+      <legend style="text-align: left">More than 40 faculty</legend>
+      <script>
+        drawCircle(111);
+        drawCircle(105);
+        drawCircle(114);
+        drawCircle(109);
+      </script>
+    </fieldset>
+    <fieldset id="21_to_40">
+      <legend style="text-align: left">21 to 40 faculty</legend>
+      <script>
+        drawCircle(104);
+        drawCircle(103);
+        drawCircle(106);
+        drawCircle(107);
+        drawCircle(108);
+        drawCircle(101);
+        drawCircle(112);
+      </script>
+    </fieldset>
+    <fieldset id="01_to_20">
+      <legend style="text-align: left">Upto 20 faculty</legend>
+      <script>
+        drawCircle(110);
+        drawCircle(102);
+        drawCircle(115);
+        drawCircle(113);
+      </script>
+    </fieldset>
+  </div>
+  <br />
+  <br />
+  <br />
 
-    <!-- <div style="text-align: left; width: fit-content">
+  <!-- <div style="text-align: left; width: fit-content">
       <fieldset>
         <legend>Legend</legend>
         Fields from <br />
@@ -220,5 +216,6 @@
         </label>
       </fieldset>
     </div> -->
-  </body>
+</body>
+
 </html>
