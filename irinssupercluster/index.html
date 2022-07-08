@@ -12,10 +12,137 @@
         Major Areas of R&D Specialisation in Anna University - Domain of
         Electrical, Information and Computing Sciences (EIC)
     </title>
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+        }
+
+        .modalWindow {
+            position: fixed;
+            font-family: arial;
+            font-size: 80%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+
+        .modalHeader h2 {
+            color: #1d7484;
+            border-bottom: 2px groove #efefef;
+        }
+
+        .modalWindow:target {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modalWindow>div {
+            width: 500px;
+            position: relative;
+            margin: 50% auto;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .modalWindow .modalHeader {
+            padding: 5px 20px 0px 20px;
+        }
+
+        .modalWindow .modalContent {
+            padding: 0px 20px 5px 20px;
+        }
+
+        .modalWindow .modalFooter {
+            padding: 8px 20px 8px 20px;
+        }
+
+        .modalFooter {
+            background: #F1F1F1;
+            border-top: 1px solid #999;
+            -moz-box-shadow: inset 0px 13px 12px -14px #888;
+            -webkit-box-shadow: inset 0px 13px 12px -14px #888;
+            box-shadow: inset 0px 13px 12px -14px #888;
+        }
+
+        .modalFooter p {
+            color: #D4482D;
+            text-align: right;
+            margin: 0;
+            padding: 5px;
+        }
+
+        .ok,
+        .close,
+        .cancel {
+            background: #982c61;
+            color: #f9f9f9;
+            line-height: 25px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+
+        .close {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 22px;
+            height: 22px;
+            font-size: 10px;
+
+        }
+
+        .ok,
+        .cancel {
+            width: 120px;
+            float: center;
+            margin-left: 20px;
+        }
+
+        /* .ok:hover {
+            background: #189CDA;
+        } */
+
+        .close:hover,
+        .cancel:hover {
+            background: #982c61;
+        }
+
+        .clear {
+            float: none;
+            clear: both;
+        }
+    </style>
 </head>
 
 <body>
-    <script src="../data/summary.js"></script>
+    <script src="summary.js"></script>
     <script>
         let drawMode = "linear";
         // const colours = {
@@ -49,28 +176,14 @@
             if (drawMode == "log") {
                 radius = Math.round(Math.log10(parseInt(number)) * 40 + 20);
             } else if (drawMode == "linear") {
-                radius = parseInt(number) + 60;
+                radius = parseInt(number) + 50;
             }
             return radius;
-        }
-
-        function calcParentId(code) {
-            circle = getCircleInfo(code);
-            number = circle["Faculty"];
-            if (number <= 20) {
-                parentId = "01_to_20";
-            } else if (number > 21 && number <= 40) {
-                parentId = "21_to_40";
-            } else if (number > 40) {
-                parentId = "40_to_inf";
-            }
-            return parentId;
         }
 
         function drawCircle(code) {
             circle = getCircleInfo(code);
             radius = getCircleRadius(code);
-            div_id = calcParentId(code);
 
             var svg1 = document.createElementNS(
                 "http://www.w3.org/2000/svg",
@@ -79,7 +192,7 @@
             svg1.setAttribute("height", radius * 2);
             svg1.setAttribute("width", radius * 2);
 
-            document.getElementById(div_id).appendChild(svg1);
+            document.getElementById('superclusters').appendChild(svg1);
 
             var title = document.createElementNS(
                 "http://www.w3.org/2000/svg",
@@ -98,16 +211,27 @@
             circles.setAttribute("stroke-width", 2);
             circles.setAttribute("fill", getColor(circle["Category"]));
 
-            var areaText = document.createElementNS(
+            var areaText1 = document.createElementNS(
                 "http://www.w3.org/2000/svg",
                 "text"
             );
-            areaText.textContent = circle["Area"];
-            areaText.setAttribute("x", "50%");
-            areaText.setAttribute("y", "40%");
-            areaText.setAttribute("text-anchor", "middle");
-            areaText.setAttribute("fill", "#fff");
-            areaText.setAttribute("dy", ".3em");
+            areaText1.textContent = circle["Area1"];
+            areaText1.setAttribute("x", "50%");
+            areaText1.setAttribute("y", "35%");
+            areaText1.setAttribute("text-anchor", "middle");
+            areaText1.setAttribute("fill", "#fff");
+            areaText1.setAttribute("dy", ".3em");
+
+            var areaText2 = document.createElementNS(
+                "http://www.w3.org/2000/svg",
+                "text"
+            );
+            areaText2.textContent = circle["Area2"];
+            areaText2.setAttribute("x", "50%");
+            areaText2.setAttribute("y", "50%");
+            areaText2.setAttribute("text-anchor", "middle");
+            areaText2.setAttribute("fill", "#fff");
+            areaText2.setAttribute("dy", ".3em");
 
             var numberText = document.createElementNS(
                 "http://www.w3.org/2000/svg",
@@ -115,18 +239,19 @@
             );
             numberText.textContent = "(" + circle["Faculty"] + ")";
             numberText.setAttribute("x", "50%");
-            numberText.setAttribute("y", "60%");
+            numberText.setAttribute("y", "65%");
             numberText.setAttribute("text-anchor", "middle");
             numberText.setAttribute("fill", "#fff");
             numberText.setAttribute("dy", ".3em");
 
-            page = "areas/" + code + ".html";
+            page = "#openModal" + code;
             var link = document.createElementNS("http://www.w3.org/2000/svg", "a");
             link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", page);
 
             link.appendChild(circles);
             link.appendChild(title);
-            link.appendChild(areaText);
+            link.appendChild(areaText1);
+            link.appendChild(areaText2);
             link.appendChild(numberText);
             svg1.appendChild(link);
         }
@@ -141,73 +266,133 @@
     </header>
     <br />
     <div class="row">
+        <div class="column"><span style="text-align: left;"><a href="../index.html">To Main Page</a></span>
+        </div>
         <div class="column"><span style="text-align: right;">
                 <script>
                     document.write('<a href="' + document.referrer + '">Go Back</a>');
                 </script>
-            </span></div>
+            </span>
+        </div>
     </div>
-
-    <br />
 
     <br />
     <div style="text-align: center">
-        <fieldset id="40_to_inf">
-            <legend style="text-align: left">I. Networks, the Net and the Web (137)
-                (Networks, Networking, Security, Wireless & Sensor Networks, Web, Cloud and Grid Computing, IoT)
-            </legend>
+        <fieldset id="superclusters">
+            <legend style="text-align: left">Super Clusters (Large Areas of specialisation)</legend>
             <script>
-                drawCircle(107);
-                drawCircle(108);
-                drawCircle(109);
-                drawCircle(112);
-                drawCircle(115);
-            </script>
-        </fieldset>
-        <fieldset id="21_to_40">
-            <legend style="text-align: left">21 to 40 faculty</legend>
-            <script>
-                drawCircle(104);
-                drawCircle(103);
-                drawCircle(106);
-                drawCircle(107);
-                drawCircle(108);
-                drawCircle(101);
-                drawCircle(112);
-            </script>
-        </fieldset>
-        <fieldset id="01_to_20">
-            <legend style="text-align: left">Upto 20 faculty</legend>
-            <script>
-                drawCircle(110);
-                drawCircle(102);
-                drawCircle(115);
-                drawCircle(113);
+                drawCircle(1);
+                drawCircle(2);
+                drawCircle(3);
+                drawCircle(4);
+                drawCircle(5);
+                drawCircle(6);
             </script>
         </fieldset>
     </div>
     <br />
-    <br />
-    <br />
+    <div id="openModal1" class="modalWindow">
+        <div>
+            <div class="modalHeader" style="text-align: center">
+                <h2>Networks, the Net and the Web</h2>
+                <!-- <a href="#close" title="Close" class="close">X</a> -->
+            </div>
+            <div class="modalContent">
+                <ul>
+                    <li>1 07 -- Wireless Networks, including Sensor Networks - 29</li>
+                    <li>1 08 -- Cryptography and Network Security - 27</li>
+                    <li>1 09 -- Networks and Networking (excluding 107 and 108) - 41</li>
+                    <li>1 12 -- Web, Cloud and Grid Computing - 22</li>
+                    <li>1 15 -- Internet of Things, including Embedded and Realtime Systems - 14</li>
+                </ul>
+            </div>
+            <div style="text-align: center"><a href="#ok" title="Close"><strong>Close</strong></a></div>
 
-    <!-- <div style="text-align: left; width: fit-content">
-      <fieldset>
-        <legend>Legend</legend>
-        Fields from <br />
-        <label style="background-color: #813762">
-          <div style="color: white">Electrical, Information and Computing</div>
-        </label>
-        <label style="background-color: #905e00">
-          <div style="color: white">
-            Mathematics, Sciences & Humanities<br />
-            and Management
-          </div>
-        </label>
-        <label style="background-color: #003f5c">
-          <div style="color: white">Non-Electrical & Computing Sciences</div>
-        </label>
-      </fieldset>
-    </div> -->
+            <!-- <div class="modalFooter">
+                <a href="#cancel" title="Cancel" class="cancel">Cancel</a>
+                <a href="#ok" title="Ok" class="ok">Apply</a>
+                <p>Keep in mind that this is a demo</p>
+                <div class="clear"></div>
+            </div> -->
+        </div>
+    </div>
+    <div id="openModal2" class="modalWindow">
+        <div>
+            <div class="modalHeader" style="text-align: center">
+                <h2>Electronics & Automation</h2>
+            </div>
+            <div class="modalContent">
+                <ul>
+                    <li>1 02 -- Circuit Design, Analog and Digital, Chip Design, VLSI - 17</li>
+                    <li>1 03 -- Electronics, including Power Electronics, Medical Electronics, Mechatronics,
+                        Avionics -
+                        33</li>
+                    <li>1 04 -- Sensors, Instrumentation, Control and Automation - 35</li>
+                </ul>
+            </div>
+            <div style="text-align: center"><a href="#ok" title="Close"><strong>Close</strong></a></div>
+        </div>
+    </div>
+    <div id="openModal3" class="modalWindow">
+        <div>
+            <div class="modalHeader" style="text-align: center">
+                <h2>Communication & Signal Processing</h2>
+            </div>
+            <div class="modalContent">
+                <ul>
+                    <li>1 05 -- Signal Processing, Image Processing, Pattern Recognition - 44</li>
+                    <li>1 06 -- Communications, including Satellite Communication, Multimedia, RF, Antennas - 33
+                    </li>
+                </ul>
+            </div>
+            <div style="text-align: center"><a href="#ok" title="Close"><strong>Close</strong></a></div>
+        </div>
+    </div>
+    <div id="openModal4" class="modalWindow">
+        <div>
+            <div class="modalHeader" style="text-align: center">
+                <h2>Computers & Databases</h2>
+            </div>
+            <div class="modalContent">
+                <ul>
+                    <li>1 10 -- Computer Hardware and Architecture - 18</li>
+                    <li>1 11 -- Computing, Computer Software, Data Bases 50</li>
+                </ul>
+            </div>
+            <div style="text-align: center"><a href="#ok" title="Close"><strong>Close</strong></a></div>
+        </div>
+    </div>
+    <div id="openModal5" class="modalWindow">
+        <div>
+            <div class="modalHeader" style="text-align: center">
+                <h2>Artificial Intelligence & Analytics</h2>
+            </div>
+            <div class="modalContent">
+                <ul>
+                    <li>1 13 -- NLP, including Text Analytics, Machine Translation etc - 10</li>
+                    <li>1 14 -- Artificial Intelligence, including Machine Learning, Data Mining, Big Data Analytics
+                        -
+                        44</li>
+                </ul>
+            </div>
+            <div style="text-align: center"><a href="#ok" title="Close"><strong>Close</strong></a></div>
+        </div>
+    </div>
+    <div id="openModal6" class="modalWindow">
+        <div>
+            <div class="modalHeader" style="text-align: center">
+                <h2>High Voltage / Power</h2>
+            </div>
+            <div class="modalContent">
+                <ul>
+                    <li>1 01 -- High Voltage/ Power Engg., including Power Transmission, Electrical Motors and
+                        Machines
+                        - 24</li>
+                </ul>
+            </div>
+            <div style="text-align: center"><a href="#ok" title="Close"><strong>Close</strong></a></div>
+        </div>
+    </div>
 </body>
 
 </html>
